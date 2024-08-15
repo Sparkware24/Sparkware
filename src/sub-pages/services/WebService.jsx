@@ -1,18 +1,16 @@
 import React from "react";
 import service from "../../constants/images/services/webabout.jpg";
-import service2 from "../../constants/images/services/custom.jpg";
-import service1 from "../../constants/images/services/backend.jpg";
-import icon1 from "../../constants/images/icons/Icon11.png";
-import icon2 from "../../constants/images/icons/web.png";
-// import icon3 from "../../constants/images/icons/ico1.png";
-import icon4 from "../../constants/images/icons/ico1.png";
-import icon5 from "../../constants/images/icons/Icon6.png";
-import icon6 from "../../constants/images/icons/Icon10.png";
-import icon7 from "../../constants/images/icons/Icon1.png";
-import icon8 from "../../constants/images/icons/testing.png";
-import icon9 from "../../constants/images/icons/Icon4.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import icon1 from "../../constants/images/services/personal-info.png"; // Replace with actual paths
+import icon2 from "../../constants/images/services/e-learning.png";
+import icon3 from "../../constants/images/services/analytics.png";
+import icon4 from "../../constants/images/services/travel-website.png";
+import icon5 from "../../constants/images/services/order-food.png";
+import icon6 from "../../constants/images/services/doctor.png";
+import icon7 from "../../constants/images/services/coding.png";
+import icon8 from "../../constants/images/services/online-shop.png";
+import icon9 from "../../constants/images/services/computer.png";
+
+
 
 const boxes = [
   {
@@ -68,6 +66,7 @@ const boxes = [
 const Web = () => {
   return (
     <div className="min-h-screen relative">
+      {/* Header Image Section */}
       <div className="relative w-full h-[50vh]">
         <img
           src={service}
@@ -81,67 +80,121 @@ const Web = () => {
         </div>
       </div>
 
-      <h1 className="text-2xl lg:text-4xl font-bold text-gray-800 text-center mt-10 mb-2 relative">
-        Do you Need an Expert Web
-        <br /> Application Development Company?
-        <span className="block h-1 w-1/12 bg-red-700 mt-2 mx-auto"></span>
-      </h1>
+      {/* Centered H1 Header */}
+      <div className="flex justify-center mt-8">
+        <h1 className="text-2xl lg:text-4xl font-bold text-center">
+          Elevate Your Online Presence with Cutting-Edge Web Development
+        </h1>
+      </div>
 
-      <div className="flex flex-col lg:flex-row justify-center items-center p-5 gap-5 lg:gap-x-20 xl:gap-x-40">
-        <div className="w-full lg:w-1/2 max-w-2xl lg:max-w-xl bg-gray-100 p-6 rounded-lg border-2 border-red-500 shadow-md">
-          <p className="text-xl leading-relaxed flex items-start">
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="text-red-600 mr-2"
-            />
-            Saigon Technology stands at the forefront as a distinguished web
-            application development company, boasting a rich legacy of over 12
-            years in the industry. Our voyage through the realms of web
-            development is consistently marked by the benefits of unwavering
-            allegiance to the Agile Mindset, crafting tailor-made solutions that
-            range from nurturing startup ventures to developing complex,
-            multi-faceted systems for substantial corporate entities.
-          </p>
-        </div>
-        <div className="w-full lg:w-1/2 max-w-md">
+      {/* Card with Image and Paragraph */}
+      <div className="flex justify-center mt-8">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-xl mb-8">
           <img
-            src={service1}
-            className="w-full h-auto rounded-lg"
-            alt="Web Development"
+            src={service}
+            alt="Web Development Overview"
+            className="object-cover w-full"
           />
+          <div className="p-6">
+            <p className="text-lg text-gray-700">
+              At Sparkware, we specialize in crafting exceptional websites that
+              not only look stunning but also deliver top-notch functionality.
+              Our web development services blend the latest technologies with
+              innovative design principles to ensure your website stands out in
+              today’s competitive digital landscape. Whether you need a sleek
+              corporate site, a dynamic e-commerce platform, or a custom web
+              application, our team of experts is dedicated to bringing your
+              vision to life with precision and creativity.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row justify-center items-center p-5 gap-5 lg:gap-x-20 xl:gap-x-40">
-        <div className="w-full lg:w-1/2 max-w-md">
-          <img
-            src={service2}
-            className="w-full h-auto rounded-lg"
-            alt="Web Development"
-          />
+      <div className="flex justify-center mt-8">
+        <h1 className="text-2xl lg:text-4xl font-bold text-center">
+          Explore Our Services
+        </h1>
+      </div>
+
+      {/* 3x3 Grid of Boxes with Icons */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 px-4 lg:px-20 mb-8">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon1} alt="Service 1 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            Personal/Portfolio Website
+          </h2>
         </div>
-        <div className="w-full lg:w-1/2 max-w-2xl lg:max-w-xl bg-gray-100 p-6 rounded-lg border-2 border-red-500 shadow-md">
-          <p className="text-xl leading-relaxed flex items-start">
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="text-red-600 mr-2"
-            />
-            Web application development services refer to the overall designing,
-            development, testing, and deployment of applications for the web or
-            cloud, which will be installed on a single or multiple remote
-            servers, which users can then access later via the internet. Our
-            prowess in web application development is evident in our meticulous
-            handling of bespoke solutions. Whether it's pioneering web apps or
-            navigating through intricate system integrations, our approach and
-            rich web experience are characterized by a blend of acute precision
-            and unwavering professionalism while keeping abreast of the latest
-            technologies.
-          </p>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon2} alt="Service 2 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">Education Website</h2>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon3} alt="Service 3 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">Business Website</h2>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon4} alt="Service 4 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">Travel Website</h2>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon5} alt="Service 5 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            Food & Restaurant Website
+          </h2>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon6} alt="Service 6 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            Health & Fitness Website
+          </h2>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon7} alt="Service 7 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">Custom Website</h2>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon8} alt="Service 8 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">Ecommerce Website</h2>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon9} alt="Service 9 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            Custom Web Applications
+          </h2>
         </div>
       </div>
 
+      {/* Left Side Image and Right Side Paragraph */}
+      <div className="flex flex-col md:flex-row items-center mt-12 px-4 lg:px-20 mb-8">
+        <div className="md:w-1/2 mb-8 md:mb-0">
+          <img
+            src={service}
+            alt="Web Development"
+            className="object-cover w-full h-auto rounded-lg shadow-lg"
+          />
+        </div>
+        <div className="md:w-1/2 md:pl-8">
+          <p className="text-lg text-gray-700">
+            Our approach to web development is all about balancing form and
+            function. We focus on creating user-centric designs that not only
+            captivate your audience but also drive engagement and conversions.
+            From responsive layouts to intuitive interfaces, every aspect of our
+            development process is tailored to meet your specific needs and
+            objectives. Let us help you build a digital presence that makes a
+            lasting impression.
+          </p>
+        </div>
+      </div>
       <section className="p-10 bg-gray-200 text-center lg:mt-10">
-        <h1 className="text-2xl lg:text-3xl font-bold text-red-600 mb-5 font-serif">
+        <h1 className="text-2xl lg:text-3xl font-bold text-blue-600 mb-5 font-serif">
           Our Web Application Development Services
         </h1>
         <p className="text-xl text-gray-700 mb-10 sm:px-5 lg:px-232 xl:px-52">
@@ -164,7 +217,7 @@ const Web = () => {
                   className="absolute top-4 left-4 w-12 h-12"
                   alt={`Icon ${index + 1}`}
                 />
-                <h2 className="text-xl font-semibold text-red-600 mt-14 mb-2 text-start">
+                <h2 className="text-xl font-semibold text-blue-600 mt-14 mb-2 text-start">
                   {box.title}
                 </h2>
                 <p className="text-start text-lg text-gray-700">
@@ -175,35 +228,6 @@ const Web = () => {
           </div>
         </div>
       </section>
-      {/* Wave Section */}
-      <div className="relative bg-red-500 text-white py-16">
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-red-500">
-          <svg
-            viewBox="0 0 1440 320"
-            className="absolute inset-x-0 bottom-0"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="#f87171"
-              fillOpacity="1"
-              d="M0,96L30,117.3C60,139,120,181,180,186.7C240,192,300,160,360,149.3C420,139,480,149,540,186.7C600,224,660,288,720,293.3C780,299,840,245,900,229.3C960,213,1020,235,1080,240C1140,245,1200,235,1260,218.7C1320,203,1380,181,1410,170.7L1440,160L1440,320L0,320Z"
-            ></path>
-          </svg>
-        </div>
-        <div className="relative z-10 text-center px-4 lg:px-8">
-          <h2 className="text-3xl font-bold mb-4">Get Started with Us</h2>
-          <p className="text-lg mb-6">
-            Contact us today to enhance your digital presence with our expert
-            web application development services. Let’s work together to build
-            innovative and reliable solutions that drive your business forward.
-          </p>
-          <a href="/Company/Contactus" className="block">
-            <button className="bg-white text-red-500 py-2 px-6 rounded-full font-semibold">
-              Get in Touch
-            </button>
-          </a>
-        </div>
-      </div>
     </div>
   );
 };
