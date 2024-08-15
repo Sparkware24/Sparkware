@@ -6,8 +6,11 @@ import ImageCarousel from "../components/ImageCarousel";
 import CounterExp from "../components/CounterExp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import icon1 from "../constants/images/icons/Icon1.png";
-import icon2 from "../constants/images/icons/Icon2.png";
+import icon1 from "../constants/images/home/web.png";
+import icon2 from "../constants/images/home/mobile.png";
+import icon3 from "../constants/images/home/graphic.png";
+import icon4 from "../constants/images/home/maintain.png";
+import icon5 from "../constants/images/home/embeded.png";
 
 import leftImage from "../constants/images/left.jpg";
 
@@ -19,6 +22,7 @@ import LeatestProjects from "../components/LeatestProjects";
 import "./Styles.css";
 
 function Home() {
+ 
   return (
     <div>
       <div className="h-[60vh] sm:h-[90vh]">
@@ -132,15 +136,16 @@ function Home() {
           </div>
         </div>
       </div>
+
       <div className="flex flex-col justify-center">
         <div className="text-center py-4">
-          <h1 className="header-underline-animation font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif">
+          <h1 className="font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif text-blue-800 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-blue-500 after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2">
             OUR SERVICES
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto px-2 cursor-defalt">
-          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-red-200 hover:border-red-700 border border-transparent">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto px-2 cursor-default">
+          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-blue-200 hover:border-blue-700 border border-transparent text-center">
             <img
               src={icon1}
               alt="Web Application Development"
@@ -148,13 +153,19 @@ function Home() {
             />
             <h2 className="text-2xl mb-2">Web Application Development</h2>
             <p className="text-lg">
-              To help businesses successfully communicate with their intended
-              demographic, Xcrop Technology provides services that include the
-              complete spectrum of the software development life cycle.
+              Sparkware provides cutting-edge technology solutions covering the
+              entire software development lifecycle, ensuring your digital
+              presence is optimized, efficient, and aligned with your goals.
             </p>
+            <a
+              href="/service/web" // Replace with the actual URL
+              className="inline-block mt-4 px-6 py-3 text-white bg-blue-950 rounded hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-950 focus:ring-opacity-50"
+            >
+              Learn More
+            </a>
           </div>
 
-          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-red-200 hover:border-red-700 border border-transparent">
+          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-blue-200 hover:border-blue-700 border border-transparent text-center">
             <img
               src={icon2}
               alt="Mobile App Development"
@@ -162,23 +173,87 @@ function Home() {
             />
             <h2 className="text-2xl mb-2">Mobile App Development</h2>
             <p className="text-lg">
-              To achieve our client's business objectives, we design and build
-              feature-rich handheld apps for a wide range of mobile platforms,
-              with a particular emphasis on delivering superior user experience
-              and making use of cutting-edge mobile technology.
+              Sparkware delivers robust software solutions across platforms,
+              focusing on high-performance applications that enhance user
+              engagement and leverage the latest technology for a seamless
+              experience.
             </p>
+            <a
+              href="/service/mobile" // Replace with the actual URL
+              className="inline-block mt-4 px-6 py-3 text-white bg-blue-950 rounded hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-950 focus:ring-opacity-50"
+            >
+              Learn More
+            </a>
           </div>
-        </div>
 
-        <div className="flex justify-center mt-6">
-          <Link
-            to="/service"
-            className="border-2 border-red-700 bg-red-700 text-white py-4 px-8 text-base rounded hover:bg-white hover:text-red-700 transition duration-500"
-          >
-            Explore in detail
-          </Link>
+          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-blue-200 hover:border-blue-700 border border-transparent text-center">
+            <img
+              src={icon3}
+              alt="Graphic Design"
+              className="mx-auto mb-3 w-16"
+            />
+            <h2 className="text-2xl mb-2">Graphic Design</h2>
+            <p className="text-lg">
+              Sparkware creates impactful graphic designs that elevate your
+              brand's visual identity. Our designs captivate your audience and
+              convey your message effectively, using the latest trends and
+              techniques.
+            </p>
+            <a
+              href="/service/graphic" // Replace with the actual URL
+              className="inline-block mt-4 px-6 py-3 text-white bg-blue-950 rounded hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-950 focus:ring-opacity-50"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-blue-200 hover:border-blue-700 border border-transparent text-center">
+            <img
+              src={icon4}
+              alt="Software Maintenance and Support"
+              className="mx-auto mb-3 w-16"
+            />
+            <h2 className="text-2xl mb-2">Software Maintenance and Support</h2>
+            <p className="text-lg">
+              Sparkware provides comprehensive software maintenance and support,
+              including proactive monitoring, timely updates, and rapid issue
+              resolution. We keep your systems efficient, secure, and up-to-date
+              to ensure ongoing reliability and performance.
+            </p>
+            <a
+              href="/service/software" // Replace with the actual URL
+              className="inline-block mt-4 px-6 py-3 text-white bg-blue-950 rounded hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-950 focus:ring-opacity-50"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-blue-200 hover:border-blue-700 border border-transparent text-center">
+            <img
+              src={icon5}
+              alt="Embedded System Development"
+              className="mx-auto mb-3 w-16"
+            />
+            <h2 className="text-2xl mb-2">Embedded System Development</h2>
+            <p className="text-lg">
+              Sparkware specializes in embedded system development, crafting
+              custom solutions that enhance your products with cutting-edge
+              technology. Our tailored systems ensure seamless integration and
+              optimal performance across various industries.<br></br>
+              <br></br>
+            </p>
+            <a
+              href="/service/embedded" // Replace with the actual URL
+              className="inline-block mt-4 px-6 py-3 text-white bg-blue-950 rounded hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-950 focus:ring-opacity-50"
+            >
+              Learn More
+            </a>
+          </div>
+
+          
         </div>
       </div>
+
       {/* <div className="flex flex-col py-5">
         <div className="text-center py-6">
           <h1 className="header-underline-animation font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif">
@@ -222,7 +297,7 @@ function Home() {
       <div className="py-4 px-2 sm:px-4">
         <ImageCarousel />
       </div>
-      
+
       <div className="px-2 sm:px-4 lg:px-10 py-4 ">
         <CounterExp />
       </div>
