@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./Styles.css";
 import slide1 from "../constants/images/slides/slide1.jpg";
-import slide2 from "../constants/images/services/backend.jpg";
+import slide2 from "../constants/images/slides/slide2.jpg";
 import slide3 from "../constants/images/slides/slide3.jpg";
-import slide4 from "../constants/images/slides/slide4.png";
+import slide4 from "../constants/images/slides/slide4.jpg";
 
 const images = [
   {
     path: slide1,
-    title: "Phoenix DIgital",
+    title: "Sparkware",
     text: "Phoenix Digital, we fuse visionary design with cutting-edge web development. Our expert team crafts immersive, high-performance websites that elevate your brand and captivate audiences. Ignite your digital transformation with us and create something truly legendary!",
   },
   {

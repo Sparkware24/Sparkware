@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CompanyMap from "../components/CompanyMap";
+
 import SlideShow from "../components/SlideShow";
 import ImageCarousel from "../components/ImageCarousel";
 import CounterExp from "../components/CounterExp";
@@ -8,22 +8,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import icon1 from "../constants/images/icons/Icon1.png";
 import icon2 from "../constants/images/icons/Icon2.png";
-import icon3 from "../constants/images/icons/Icon3.png";
-import icon4 from "../constants/images/icons/Icon4.png";
-import icon5 from "../constants/images/icons/Icon5.png";
-import icon6 from "../constants/images/icons/Icon6.png";
-import icon7 from "../constants/images/icons/Icon7.png";
-import icon8 from "../constants/images/icons/Icon8.png";
-import icon9 from "../constants/images/icons/Icon9.png";
+
 import leftImage from "../constants/images/left.jpg";
-import rightImage from "../constants/images/RightHome.jpg";
+
 import leftTopImage from "../constants/images/home_head_1.jpg";
 import leftBottomImage from "../constants/images/leftBottom.jpg";
-import icon11 from "../constants/images/icons/ico1.png";
-import icon12 from "../constants/images/icons/ico2.png";
-import icon13 from "../constants/images/icons/ico3.png";
-import icon14 from "../constants/images/icons/ico4.png";
-import CustomerReviews from "../components/CustomerReviews";
+
+
 import LeatestProjects from "../components/LeatestProjects";
 import "./Styles.css";
 
@@ -32,10 +23,6 @@ function Home() {
     <div>
       <div className="h-[60vh] sm:h-[90vh]">
         <SlideShow />
-      </div>
-
-      <div className="py-4 px-2 sm:px-4">
-        <ImageCarousel />
       </div>
 
       <div className="flex flex-col lg:flex-row md:pb-5 xl:pb-20">
@@ -145,7 +132,6 @@ function Home() {
           </div>
         </div>
       </div>
-
       <div className="flex flex-col justify-center">
         <div className="text-center py-4">
           <h1 className="header-underline-animation font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif">
@@ -182,113 +168,6 @@ function Home() {
               and making use of cutting-edge mobile technology.
             </p>
           </div>
-
-          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-red-200 hover:border-red-700 border border-transparent">
-            <img
-              src={icon3}
-              alt="Custom Software Development"
-              className="mx-auto mb-3 w-16"
-            />
-            <h2 className="text-2xl mb-2">Custom Software Development</h2>
-            <p className="text-lg">
-              Our expertise is in building scalable and effective software
-              solutions for businesses of all sizes, with a focus on meeting
-              their unique needs to encourage expansion and innovative concepts.
-            </p>
-          </div>
-
-          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-red-200 hover:border-red-700 border border-transparent">
-            <img
-              src={icon4}
-              alt="DevOps Services"
-              className="mx-auto mb-3 w-16"
-            />
-            <h2 className="text-2xl mb-2">DevOps Services</h2>
-            <p className="text-lg">
-              We provide appropriate services to facilitate communication and
-              coordination between software development and IT operations.
-              Experience the power of seamless coordination as we accelerate
-              software delivery and supercharge efficiency.
-            </p>
-          </div>
-
-          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-red-200 hover:border-red-700 border border-transparent">
-            <img
-              src={icon5}
-              alt="Software Development Outsourcing"
-              className="mx-auto mb-3 w-16"
-            />
-            <h2 className="text-2xl mb-2">Software Development Outsourcing</h2>
-            <p className="text-lg">
-              By utilizing Xcrop Technology's services, businesses can leverage
-              our expertise and infrastructure for the smooth completion of
-              their projects at accelerated lower overall costs.
-            </p>
-          </div>
-
-          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-red-200 hover:border-red-700 border border-transparent">
-            <img
-              src={icon6}
-              alt="Software QA Testing"
-              className="mx-auto mb-3 w-16"
-            />
-            <h2 className="text-2xl mb-2">Software QA Testing</h2>
-            <p className="text-lg">
-              Xcrop Technology offers thorough testing and bug-fixing to improve
-              overall performance and guarantee the quality, stability, and
-              functioning of software programs as part of our services.
-            </p>
-          </div>
-
-          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-red-200 hover:border-red-700 border border-transparent">
-            <img
-              src={icon7}
-              alt="Cloud Migration Services"
-              className="mx-auto mb-3 w-16"
-            />
-            <h2 className="text-2xl font-semibold mb-2">
-              Cloud Migration Services
-            </h2>
-            <p className="text-lg">
-              Experience a seamless transition to the cloud with our exceptional
-              services. We empower businesses to effortlessly move their
-              software and infrastructure, unlocking the incredible benefits of
-              scalability, top-notch security, and remarkable cost-efficiency.
-            </p>
-          </div>
-
-          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-red-200 hover:border-red-700 border border-transparent">
-            <img
-              src={icon8}
-              alt="PoC Development Services"
-              className="mx-auto mb-3 w-16"
-            />
-            <h2 className="text-2xl font-semibold mb-2">
-              PoC Development Services
-            </h2>
-            <p className="text-lg">
-              With our exceptional expertise, we empower you to embark on a
-              journey of innovation, ensuring that your concepts are thoroughly
-              tested and validated before embarking on full-scale development.
-            </p>
-          </div>
-
-          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-red-200 hover:border-red-700 border border-transparent">
-            <img
-              src={icon9}
-              alt="AI Development Services"
-              className="mx-auto mb-3 w-16"
-            />
-            <h2 className="text-2xl font-semibold mb-2">
-              AI Development Services
-            </h2>
-            <p className="text-lg">
-              By combining cutting-edge AI with machine learning, we can create
-              smart software that can streamline business operations and enhance
-              decision-making. Let us transform your business into a realm of
-              efficiency and innovation.
-            </p>
-          </div>
         </div>
 
         <div className="flex justify-center mt-6">
@@ -300,8 +179,7 @@ function Home() {
           </Link>
         </div>
       </div>
-
-      <div className="flex flex-col py-5">
+      {/* <div className="flex flex-col py-5">
         <div className="text-center py-6">
           <h1 className="header-underline-animation font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif">
             OUR VALUES
@@ -315,7 +193,7 @@ function Home() {
         <div className="p-4 sm:px-10 lg:px-20 xl:Px-32">
           <CustomerReviews />
         </div>
-      </div>
+      </div>{" "}*/}
 
       <div className="flex flex-col py-5">
         <div className="text-center py-4">
@@ -341,121 +219,94 @@ function Home() {
           </Link>
         </div>
       </div>
-
-      <div className="flex flex-col p-4 lg:px-8">
-        <div className="2xl:pl-8">
-          <h2 className="text-[#780a15] text-3xl mb-2">Our Benefits...</h2>
-          <h1 className="text-[#e81c30] text-5xl font-bold mb-4">
-            Why Choose Us?
-          </h1>
-        </div>
-
-        <div className="flex flex-col-reverse xl:flex-row-reverse">
-          <div className="w-full xl:w-1/2 py-2 flex items-center justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 xmd:grid-cols-3 xl:grid-cols-2 gap-4">
-              <div className="w-full sm:w-72 p-2 text-center border border-black">
-                <img
-                  src={icon11}
-                  alt="Icon 1"
-                  className="w-24 h-24 mb-2 mx-auto"
-                />
-                <h3 className="text-[#e81c30] text-xl mb-2">
-                  Best Technological Solutions
-                </h3>
-                <p className="text-base">
-                  Inspired IT specialists are looking forward to understand the
-                  varied project requirements & come up with the superlative
-                  solutions.
-                </p>
-              </div>
-
-              <div className="w-full sm:w-72 p-2 text-center border border-black">
-                <img
-                  src={icon12}
-                  alt="Icon 2"
-                  className="w-24 h-24 mb-2 mx-auto"
-                />
-                <h3 className="text-[#e81c30] text-xl mb-2">
-                  Customer Satisfaction
-                </h3>
-                <p className="text-base">
-                  We consider our success on the basis of the clients’
-                  successfully performing websites or mobile apps.
-                </p>
-              </div>
-
-              <div className="w-full sm:w-72 p-2 text-center border border-black">
-                <img
-                  src={icon13}
-                  alt="Icon 3"
-                  className="w-24 h-24 mb-2 mx-auto"
-                />
-                <h3 className="text-[#e81c30] text-xl mb-2">Value Added</h3>
-                <p className="text-base">
-                  Our value added services guarantee the clients to have
-                  outcomes beyond the expectations.
-                </p>
-              </div>
-
-              <div className="w-full sm:w-72 p-2 text-center border border-black">
-                <img
-                  src={icon14}
-                  alt="Icon 4"
-                  className="w-24 h-24 mb-2 mx-auto"
-                />
-                <h3 className="text-[#e81c30] text-xl mb-2">
-                  Customer Tailored Support
-                </h3>
-                <p className="text-base">
-                  We are dedicated to ensuring that our customers can contact us
-                  in the best way for them.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="w-full xl:w-1/2 flex justify-center items-center p-4 relative 2xl:pl-8">
-            <img
-              src={leftImage}
-              alt="Description"
-              className="max-w-full max-h-full h-auto p-4"
-            />
-            <div className="w-full absolute bottom-4 left-4">
-              <img
-                src={rightImage}
-                alt="Icon 1"
-                className="w-2/5 h-auto transform transition-transform duration-300 hover:scale-110"
-              />
-            </div>
-            <div className="w-full flex absolute top-4 right-4 justify-end">
-              <img
-                src={leftTopImage}
-                alt="Icon 4"
-                className="w-2/5 h-auto transform transition-transform duration-300 hover:scale-110"
-              />
-            </div>
-          </div>
-        </div>
+      <div className="py-4 px-2 sm:px-4">
+        <ImageCarousel />
       </div>
-
+      
       <div className="px-2 sm:px-4 lg:px-10 py-4 ">
         <CounterExp />
       </div>
+      {/* Contact Form */}
+      <div className="mt-24">
+        <h2 className="text-blue-900 font-bold text-3xl text-center font-sans mt-24">
+          GET IN TOUCH
+        </h2>
+        <p
+          className="text-gray-800 text-center text-lg mt-4"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Thank you for reaching out to Sparkware. We are here to assist you
+          with any inquiries or issues you may have.
+          <br />
+          Please fill out the form below, and we will respond to your query via
+          email within 24 hours.
+        </p>
+      </div>
 
-      <div className="p-2">
-        <div className="text-center py-4">
-          <h1 className="header-underline-animation font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif">
-            OUR RETAINED CLIENTS
-          </h1>
-          <p className="text-lg pt-4 px-4 sm:px-20 lg:px-40 xl:px-60">
-            Thank you for your precious feedback and support. We always do our
-            best to contribute to your growth as our slogan: Your success is our
-            mission.
-          </p>
-        </div>
-        <div className="p-4 lg:px-10 xl:px-12">
-          <CompanyMap />
-        </div>
+      <div className="text-center mt-5 mb-5">
+        <form
+          id="contact-form"
+          className="max-w-xl mx-auto p-4 bg-white border border-gray-300 rounded-md"
+        >
+          <label htmlFor="name" className="block text-left text-gray-700 mb-1">
+            Name:
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            className="w-full p-2 mb-4 border border-gray-300 rounded-md"
+          />
+
+          <label htmlFor="email" className="block text-left text-gray-700 mb-1">
+            Email:
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            className="w-full p-2 mb-4 border border-gray-300 rounded-md"
+          />
+
+          <label
+            htmlFor="subject"
+            className="block text-left text-gray-700 mb-1"
+          >
+            Subject:
+          </label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            className="w-full p-2 mb-4 border border-gray-300 rounded-md"
+          />
+
+          <label
+            htmlFor="message"
+            className="block text-left text-gray-700 mb-1"
+          >
+            Message:
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            className="w-full p-2 mb-4 border border-gray-300 rounded-md resize-y"
+          ></textarea>
+
+          <input
+            type="submit"
+            value="Submit"
+            className="w-full p-2 text-white bg-blue-900 rounded-md cursor-pointer hover:bg-blue-800"
+          />
+        </form>
       </div>
     </div>
   );

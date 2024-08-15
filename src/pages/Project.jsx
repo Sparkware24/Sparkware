@@ -1,6 +1,6 @@
 // src/components/ProjectPage.js
 import React from "react";
-import heading from "../constants/images/projects/project-header.jpg";
+import heading from "../constants/images/projects/slide4.jpg";
 
 const ProjectPage = () => {
   return (
