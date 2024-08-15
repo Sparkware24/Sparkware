@@ -12,10 +12,9 @@ import icon3 from "../constants/images/home/graphic.png";
 import icon4 from "../constants/images/home/maintain.png";
 import icon5 from "../constants/images/home/embeded.png";
 
-import leftImage from "../constants/images/left.jpg";
+import leftImage from "../constants/images/home/left.jpg";
 
-import leftTopImage from "../constants/images/home_head_1.jpg";
-import leftBottomImage from "../constants/images/leftBottom.jpg";
+
 
 
 import LeatestProjects from "../components/LeatestProjects";
@@ -36,20 +35,6 @@ function Home() {
             alt="Description"
             className="max-w-full max-h-full h-auto p-4"
           />
-          <div className="w-full absolute top-4 left-4">
-            <img
-              src={leftTopImage}
-              alt="Icon 1"
-              className="w-2/5 h-auto transform transition-transform duration-300 hover:scale-110"
-            />
-          </div>
-          <div className="w-full flex absolute bottom-4 right-4 justify-end">
-            <img
-              src={leftBottomImage}
-              alt="Icon 4"
-              className="w-2/5 h-auto transform transition-transform duration-300 hover:scale-110"
-            />
-          </div>
         </div>
         <div className="w-full lg:w-1/2  flex flex-col justify-center items-center p-4">
           <div className="cursor-defalt">
@@ -249,8 +234,6 @@ function Home() {
               Learn More
             </a>
           </div>
-
-          
         </div>
       </div>
 
