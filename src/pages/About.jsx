@@ -1,5 +1,5 @@
 import React from "react";
-import heading from "../constants/images/company/slide2.jpg";
+import heading from "../constants/images/about/slide2.jpg";
 
 
 
