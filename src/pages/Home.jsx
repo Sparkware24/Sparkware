@@ -124,7 +124,7 @@ function Home() {
 
       <div className="flex flex-col justify-center">
         <div className="text-center py-4">
-          <h1 className="font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif text-blue-800 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-blue-500 after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2">
+          <h1 className="font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif text-blue-950 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-blue-500 after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2">
             OUR SERVICES
           </h1>
         </div>
@@ -255,7 +255,7 @@ function Home() {
 
       <div className="flex flex-col py-5">
         <div className="text-center py-4">
-          <h1 className="header-underline-animation font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif">
+          <h1 className="font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif text-blue-950 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-blue-500 after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2">
             OUR PROJECTS
           </h1>
           <p className="text-lg pt-4 px-4 sm:px-20 lg:px-40 xl:px-60">
@@ -265,13 +265,14 @@ function Home() {
             experiences and functionality.
           </p>
         </div>
+
         <div className="p-4 sm:px-10 lg:px-20 xl:Px-32">
           <LeatestProjects />
         </div>
         <div className="flex justify-center">
           <Link
             to="/project"
-            className="border-2 border-red-700 bg-red-700 text-white py-4 px-8 text-base rounded hover:bg-white hover:text-red-700 transition duration-500"
+            className="border-2 border-blue-700 bg-blue-950 text-white py-4 px-8 text-base rounded hover:bg-white hover:text-red-700 transition duration-500"
           >
             Explore more projects
           </Link>

@@ -4,26 +4,29 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
-import './Styles.css';
+import "./Styles.css";
+import projectw1 from "../constants/images/projects/portfolio1.png";
+import projecte1 from "../constants/images/projects/embedded1.png";
 
 const projects = [
   {
-    imageUrl: "https://t3.ftcdn.net/jpg/02/81/97/02/360_F_281970265_KR6Ey4XF3miLYq0QDp3WsH0m35MR2tGC.jpg",
-    name: "Project One",
+    imageUrl: projectw1,
+    name: "Portfolio",
     description:
-      "This is a description for Project One. It highlights key features and details.This is a description for Project One. It highlights key features and details.This is a description for Project One. It highlights key features and details.",
+      "An innovative showcase of diverse projects, blending creativity and technical expertise to deliver impactful digital solutions.",
   },
   {
-    imageUrl: "https://t3.ftcdn.net/jpg/02/81/97/02/360_F_281970265_KR6Ey4XF3miLYq0QDp3WsH0m35MR2tGC.jpg",
-    name: "Project Two",
+    imageUrl: projecte1,
+    name: "Temperature & Humidity Controller Unit",
     description:
-      "This is a description for Project Two. It highlights key features and details.This is a description for Project One. It highlights key features and details.This is a description for Project One. It highlights key features and details.",
+      "This unit is designed to maintain temperature and humidity at the desired level by automatically turning on and off. It is specifically designed for mushroom huts.",
   },
   {
-    imageUrl: "https://t3.ftcdn.net/jpg/02/81/97/02/360_F_281970265_KR6Ey4XF3miLYq0QDp3WsH0m35MR2tGC.jpg",
+    imageUrl:
+      "https://t3.ftcdn.net/jpg/02/81/97/02/360_F_281970265_KR6Ey4XF3miLYq0QDp3WsH0m35MR2tGC.jpg",
     name: "Project Three",
     description:
-      "This is a description for Project Three. It highlights key features and details.This is a description for Project One. It highlights key features and details.This is a description for Project One. It highlights key features and details.",
+      "This is a description for Project Three. It highlights key features and details. This is a description for Project Three. It highlights key features and details. This is a description for Project Three. It highlights key features and details.",
   },
 ];
 
@@ -44,16 +47,18 @@ function LeatestProject() {
         }}
         pagination={{ clickable: true }}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper">
+        className="mySwiper"
+      >
         {projects.map((project, index) => (
           <SwiperSlide
             key={index}
             style={{
-              width: "100%",
+              width: "auto",
               maxWidth: "800px",
-              height: "auto",
-              margin: '20px',
-            }}>
+              height: "100%",
+              margin: "20px",
+            }}
+          >
             <div className="flex justify-center items-center w-full h-full mb-10">
               <div className="bg-white rounded-lg shadow-lg w-full h-full border border-gray-200 flex flex-col items-center">
                 <img
@@ -62,7 +67,9 @@ function LeatestProject() {
                   className="w-full h-[300px] object-cover rounded-lg mb-4"
                 />
                 <h2 className="text-xl font-bold mb-2">{project.name}</h2>
-                <p className="text-base text-gray-700 text-center px-2 lg:px-10">{project.description}</p>
+                <p className="text-base text-gray-700 text-center px-2 lg:px-10">
+                  {project.description}
+                </p>
               </div>
             </div>
           </SwiperSlide>
