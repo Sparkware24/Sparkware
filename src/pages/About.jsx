@@ -20,7 +20,7 @@ const CompanyPage = () => {
         </div>
       </header>
 
-      <div className="flex flex-col lg:flex-row md:pb-5 xl:pb-20">
+      <div className="flex flex-col lg:flex-row md:pb-5 xl:pb-10">
         <div className="w-full lg:w-1/2 flex justify-center items-center p-4 relative">
           <img
             src={left}
@@ -29,10 +29,11 @@ const CompanyPage = () => {
           />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center p-4">
-          <div className="cursor-defalt">
+          <div className="cursor-default">
             <h1 className="mb-4 lg:mb-10 font-bold">
               <span className="text-blue-400 text-2xl lg:text-4xl xl:text-5xl transform transition-transform duration-300 hover:translate-x-2">
-                Innovating Your<br></br>{" "}
+                Innovating Your
+                <br />
               </span>
               <span className="text-blue-950 text-3xl lg:text-5xl xl:text-6xl">
                 IT Solutions{" "}
@@ -47,19 +48,6 @@ const CompanyPage = () => {
               ensures that we offer the most effective and innovative solutions
               available in the industry.
             </p>
-            <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row md:gap-x-10 lg:gap-x-0 xl:gap-x-4 mt-5">
-              <div className=""></div>
-              <div className=""></div>
-            </div>
-            <div className="flex justify-center sm:justify-start mt-8">
-              <a
-                href="/about"
-                className="border-2 border-blue-950 bg-blue-950 text-white py-2 px-6 text-base rounded hover:bg-white hover:text-blue-700 transition duration-500 flex items-center"
-              >
-                <span className="mr-2">Read Our Story</span>
-                <i className="fa fa-angle-double-right"></i>
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -67,7 +55,7 @@ const CompanyPage = () => {
       {/* Centered Card with Vision and Mission */}
       <div className="flex justify-center items-center my-16">
         <div className="w-full lg:w-3/4 bg-white shadow-lg rounded-lg overflow-hidden">
-          <div className="flex justify-center items-center bg-gray-100 p-4">
+          <div className="flex justify-center items-center bg-gray-100">
             <img
               src={cardImage}
               alt="Card"
@@ -84,7 +72,7 @@ const CompanyPage = () => {
                 solutions, empowering businesses to achieve their fullest
                 potential through technology.
               </p>{" "}
-              <br></br>{" "}
+              <br />{" "}
               <p className="text-gray-700 text-base">
                 At Sparkware, we envision a future where technology seamlessly
                 integrates with business processes to drive growth and success.
@@ -102,7 +90,7 @@ const CompanyPage = () => {
                 the unique needs of our clients, while fostering long-term
                 partnerships through exceptional service and support.
               </p>
-              <br></br>
+              <br />
               <p className="text-gray-700 text-base">
                 Our mission is to provide comprehensive web development, mobile
                 development, graphic design, software maintenance, and embedded
@@ -117,8 +105,79 @@ const CompanyPage = () => {
           </div>
         </div>
       </div>
-      <div className="px-2 sm:px-4 lg:px-10 py-4 ">
+
+      <div className="px-2 sm:px-4 lg:px-10 py-4">
         <CounterExp />
+      </div>
+
+      {/* Blue Section - Who We Are */}
+      <div className="bg-cyan-950 text-white py-16 flex flex-col justify-center items-center">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-6">Who We Are</h2>
+        <p className="max-w-3xl text-center text-lg lg:text-xl px-4">
+          Sparkware is a dedicated team of professionals passionate about
+          technology and its ability to transform businesses. Our expertise
+          spans various domains, allowing us to provide innovative solutions
+          that are customized to meet the specific needs of our clients. We are
+          committed to excellence, innovation, and the success of those we
+          serve.
+        </p>
+      </div>
+
+      {/* What We Do Section */}
+      <div className="py-16 px-4 bg-gray-100 flex flex-col justify-center items-center">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-10">What We Do</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl">
+          {/* Box 1 */}
+          <div className="bg-white p-6 shadow-lg rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-blue-950">
+              Web Development
+            </h3>
+            <p className="text-gray-700">
+              Crafting custom websites that are not only visually stunning but
+              also highly functional and user-friendly.
+            </p>
+          </div>
+          {/* Box 2 */}
+          <div className="bg-white p-6 shadow-lg rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-blue-950">
+              Mobile Development
+            </h3>
+            <p className="text-gray-700">
+              Designing and developing mobile applications that offer seamless
+              experiences on both iOS and Android platforms.
+            </p>
+          </div>
+          {/* Box 3 */}
+          <div className="bg-white p-6 shadow-lg rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-blue-950">
+              Graphic Design
+            </h3>
+            <p className="text-gray-700">
+              Creating compelling visuals and branding materials that capture
+              attention and convey your message effectively.
+            </p>
+          </div>
+          {/* Box 4 */}
+          <div className="bg-white p-6 shadow-lg rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-blue-950">
+              Software Maintenance
+            </h3>
+            <p className="text-gray-700">
+              Providing ongoing support and updates to ensure your software
+              remains reliable and secure.
+            </p>
+          </div>
+          {/* Box 5 */}
+          <div className="bg-white p-6 shadow-lg rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-blue-950">
+              Embedded Systems
+            </h3>
+            <p className="text-gray-700">
+              Developing innovative embedded solutions tailored to meet your
+              technical requirements.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
