@@ -1,18 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import SlideShow from "../components/SlideShow";
 import ImageCarousel from "../components/ImageCarousel";
 import CounterExp from "../components/CounterExp";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import left from "../constants/images/home/left.jpg";
+import right from "../constants/images/home/right.jpg";
 import icon1 from "../constants/images/home/web.png";
 import icon2 from "../constants/images/home/mobile.png";
 import icon3 from "../constants/images/home/graphic.png";
 import icon4 from "../constants/images/home/maintain.png";
 import icon5 from "../constants/images/home/embeded.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 
-import leftImage from "../constants/images/home/left.jpg";
 
 
 
@@ -31,7 +32,7 @@ function Home() {
       <div className="flex flex-col lg:flex-row md:pb-5 xl:pb-20">
         <div className="w-full lg:w-1/2  flex justify-center items-center p-4 relative">
           <img
-            src={leftImage}
+            src={left}
             alt="Description"
             className="max-w-full max-h-full h-auto p-4"
           />
@@ -39,83 +40,33 @@ function Home() {
         <div className="w-full lg:w-1/2  flex flex-col justify-center items-center p-4">
           <div className="cursor-defalt">
             <h1 className="mb-4 lg:mb-10 font-bold">
-              <span className="text-red-600 text-2xl lg:text-4xl xl:text-5xl transform transition-transform duration-300 hover:translate-x-2">
-                We provide the best{" "}
+              <span className="text-blue-400 text-2xl lg:text-4xl xl:text-5xl transform transition-transform duration-300 hover:translate-x-2">
+                Innovating Your<br></br>{" "}
               </span>
-              <span className="text-red-800 text-3xl lg:text-5xl xl:text-6xl">
-                IT{" "}
+              <span className="text-blue-950 text-3xl lg:text-5xl xl:text-6xl">
+                IT Solutions{" "}
               </span>
               <br />
-              <span className="text-red-800 text-3xl lg:text-5xl xl:text-6xl">
-                Solution
-              </span>
-              <span className="text-red-600 text-2xl lg:text-4xl xl:text-5xl">
-                {" "}
-                services
-              </span>
             </h1>
             <p className="text-black text-lg lg:text-xl">
-              We offer one of the most comprehensive, affordably-priced service
-              and maintenance IT support plans in the IT industry.
+              At Sparkware, we provide top-tier IT solutions designed to meet
+              your unique needs with precision and excellence. Our comprehensive
+              range of services, including web development, mobile development,
+              graphic design, software maintenance, and embedded systems,
+              ensures that we offer the most effective and innovative solutions
+              available in the industry.
             </p>
             <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row md:gap-x-10 lg:gap-x-0 xl:gap-x-4 mt-5">
-              <div className="">
-                <ul className="list-none text-lg text-black lg:text-xl">
-                  <li className="transform transition-transform duration-300 hover:translate-x-2">
-                    <FontAwesomeIcon
-                      icon={faCheckCircle}
-                      className="text-red-600 mr-2"
-                    />
-                    We Understand Customer Challenges
-                  </li>
-                  <li className="transform transition-transform duration-300 hover:translate-x-2">
-                    <FontAwesomeIcon
-                      icon={faCheckCircle}
-                      className="text-red-600 mr-2"
-                    />
-                    We Collect Clients Needs
-                  </li>
-                  <li className="transform transition-transform duration-300 hover:translate-x-2">
-                    <FontAwesomeIcon
-                      icon={faCheckCircle}
-                      className="text-red-600 mr-2"
-                    />
-                    We Craft the right solutions
-                  </li>
-                </ul>
-              </div>
-              <div className="">
-                <ul className="list-none text-lg text-black lg:text-xl">
-                  <li className="transform transition-transform duration-300 hover:translate-x-2">
-                    <FontAwesomeIcon
-                      icon={faCheckCircle}
-                      className="text-red-600 mr-2"
-                    />
-                    We Deliver Quality Services
-                  </li>
-                  <li className="transform transition-transform duration-300 hover:translate-x-2">
-                    <FontAwesomeIcon
-                      icon={faCheckCircle}
-                      className="text-red-600 mr-2"
-                    />
-                    We Ensure Customer Satisfaction
-                  </li>
-                  <li className="transform transition-transform duration-300 hover:translate-x-2">
-                    <FontAwesomeIcon
-                      icon={faCheckCircle}
-                      className="text-red-600 mr-2"
-                    />
-                    We Provide Ongoing Support
-                  </li>
-                </ul>
-              </div>
+              <div className=""></div>
+              <div className=""></div>
             </div>
             <div className="flex justify-center sm:justify-start mt-8">
               <a
-                href="/Company/Contactus"
-                className="border-2 border-red-700 bg-red-700 text-white py-2 px-6 text-base rounded hover:bg-white hover:text-red-700 transition duration-500"
+                href="/about"
+                className="border-2 border-blue-950 bg-blue-950 text-white py-2 px-6 text-base rounded hover:bg-white hover:text-blue-700 transition duration-500 flex items-center"
               >
-                Contact Us
+                <span className="mr-2">Read Our Story</span>
+                <i className="fa fa-angle-double-right"></i>
               </a>
             </div>
           </div>
@@ -272,7 +223,7 @@ function Home() {
         <div className="flex justify-center">
           <Link
             to="/project"
-            className="border-2 border-blue-700 bg-blue-950 text-white py-4 px-8 text-base rounded hover:bg-white hover:text-red-700 transition duration-500"
+            className="border-2 border-blue-950 bg-blue-950 text-white py-4 px-8 text-base rounded hover:bg-white hover:text-blue-700 transition duration-500 mb-16"
           >
             Explore more projects
           </Link>
@@ -282,14 +233,122 @@ function Home() {
         <ImageCarousel />
       </div>
 
+      <section className="flex flex-col lg:flex-row items-start mt-16 mb-16">
+        {/* Left Column with Title, Text, and Bullet Points */}
+        <div className="w-full lg:w-1/2 p-4 lg:pl-10">
+          <h2 className="text-3xl font-bold mb-4 text-blue-950">Why Choose Sparkware?</h2>
+          <h3 className="text-xl font-bold mb-2 text-blue-400">
+            Your Trusted IT Solution Partner
+          </h3>
+          <p className="text-md mb-8">
+            We offer unparalleled IT solutions tailored to your needs. Our
+            expert team delivers innovative and high-quality services across web
+            development, mobile apps, graphic design, and more. With a
+            commitment to excellence, customer satisfaction, and ongoing
+            support, we ensure that your technology investments drive real
+            results and support your business growth.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <ul className="list-none space-y-2">
+                <li className="flex items-start">
+                  <FontAwesomeIcon
+                    icon={faCheckSquare}
+                    className="text-blue-500 mr-2"
+                  />
+                  Exceptional IT Solutions
+                </li>
+                <li className="flex items-start">
+                  <FontAwesomeIcon
+                    icon={faCheckSquare}
+                    className="text-blue-500 mr-2"
+                  />
+                  We Understand Your Challenges
+                </li>
+                <li className="flex items-start">
+                  <FontAwesomeIcon
+                    icon={faCheckSquare}
+                    className="text-blue-500 mr-2"
+                  />
+                  We Deliver Top-Quality Services
+                </li>
+                <li className="flex items-start">
+                  <FontAwesomeIcon
+                    icon={faCheckSquare}
+                    className="text-blue-500 mr-2"
+                  />
+                  We Provide Ongoing Support
+                </li>
+                <li className="flex items-start">
+                  <FontAwesomeIcon
+                    icon={faCheckSquare}
+                    className="text-blue-500 mr-2"
+                  />
+                  Collaborative Partnership
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul className="list-none space-y-2">
+                <li className="flex items-start">
+                  <FontAwesomeIcon
+                    icon={faCheckSquare}
+                    className="text-blue-500 mr-2"
+                  />
+                  We Gather Your Requirements
+                </li>
+                <li className="flex items-start">
+                  <FontAwesomeIcon
+                    icon={faCheckSquare}
+                    className="text-blue-500 mr-2"
+                  />
+                  We Create Tailored Solutions
+                </li>
+                <li className="flex items-start">
+                  <FontAwesomeIcon
+                    icon={faCheckSquare}
+                    className="text-blue-500 mr-2"
+                  />
+                  We Ensure Your Satisfaction
+                </li>
+                <li className="flex items-start">
+                  <FontAwesomeIcon
+                    icon={faCheckSquare}
+                    className="text-blue-500 mr-2"
+                  />
+                  Timely Delivery
+                </li>
+                <li className="flex items-start">
+                  <FontAwesomeIcon
+                    icon={faCheckSquare}
+                    className="text-blue-500 mr-2"
+                  />
+                  Commitment to Success
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column with Image */}
+        <div className="w-full lg:w-1/2 p-4">
+          <img
+            src={right} // Update with the path to your image
+            alt="Descriptive Alt Text"
+            className="w-full h-auto object-cover rounded-lg"
+          />
+        </div>
+      </section>
+
       <div className="px-2 sm:px-4 lg:px-10 py-4 ">
         <CounterExp />
       </div>
       {/* Contact Form */}
-      <div className="mt-24">
-        <h2 className="text-blue-900 font-bold text-3xl text-center font-sans mt-24">
+      <div className="text-center py-4 mt-16">
+        <h1 className="font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif text-blue-950 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-blue-500 after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2">
           GET IN TOUCH
-        </h2>
+        </h1>
+
         <p
           className="text-gray-800 text-center text-lg mt-4"
           style={{

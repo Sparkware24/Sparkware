@@ -182,7 +182,7 @@ const Contact = () => {
               <input
                 type="submit"
                 value="Submit"
-                className="w-full p-2 text-white bg-blue-900 rounded-md cursor-pointer hover:bg-blue-800"
+                className="w-full p-2 text-white bg-blue-950 rounded-md cursor-pointer hover:bg-blue-400"
               />
             </form>
           </div>
