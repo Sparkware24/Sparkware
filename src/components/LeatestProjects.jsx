@@ -7,6 +7,7 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 import "./Styles.css";
 import projectw1 from "../constants/images/projects/portfolio1.png";
 import projecte1 from "../constants/images/projects/embedded1.png";
+import projectw2 from "../constants/images/projects/travel1.png";
 
 const projects = [
   {
@@ -22,11 +23,10 @@ const projects = [
       "This unit is designed to maintain temperature and humidity at the desired level by automatically turning on and off. It is specifically designed for mushroom huts.",
   },
   {
-    imageUrl:
-      "https://t3.ftcdn.net/jpg/02/81/97/02/360_F_281970265_KR6Ey4XF3miLYq0QDp3WsH0m35MR2tGC.jpg",
+    imageUrl: projectw2,
     name: "Project Three",
     description:
-      "This is a description for Project Three. It highlights key features and details. This is a description for Project Three. It highlights key features and details. This is a description for Project Three. It highlights key features and details.",
+      "A responsive travel website offering holiday packages and tours, where customers can explore options and make online reservations seamlessly.",
   },
 ];
 
