@@ -7,7 +7,7 @@ import About from "./pages/About";
 
 import Project from "./pages/Project";
 
-import Career from "./pages/Career";
+
 
 import Contact from "./pages/Contact";
 
@@ -29,7 +29,7 @@ const App = () => {
 
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/career" element={<Career />} />
+          
 
           {/* service sub pages */}
           <Route path="/service/web" element={<WebService />} />
