@@ -60,7 +60,7 @@ const Navbar = () => {
               </Link>
 
               {link.subpages &&
-                link.subpages.length < 5 &&
+                link.subpages.length < 6 &&
                 dropdownOpen === index && (
                   <div className="absolute left-0 z-[999] w-48 bg-blue-950 border border-blue-400 rounded shadow-lg group-hover:block">
                     {link.subpages.map((subpage, subIndex) => (

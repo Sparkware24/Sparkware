@@ -1,10 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation
+
 import header from "../../constants/images/services/mobile.jpg";
-import mobileImage from "../../constants/images/services/mobile2.jpg";
-import mobile from "../../constants/images/services/app.png";
-import ios from "../../constants/images/services/ios.png"; // First card image
-import android from "../../constants/images/services/android.png"; // Second card image
+import service from "../../constants/images/services/mobile.jpg";
+import icon1 from "../../constants/images/services/mimg1.png"; // Replace with actual paths
+import icon2 from "../../constants/images/services/mimg2.png";
+import icon3 from "../../constants/images/services/mimg3.png";
+import icon4 from "../../constants/images/services/mimg4.png";
+import icon5 from "../../constants/images/services/simg3.png";
+import icon6 from "../../constants/images/services/mimg6.png";
+import icon7 from "../../constants/images/services/simg6.png";
+
 
 const Mobile = () => {
   return (
@@ -22,204 +27,153 @@ const Mobile = () => {
           </h1>
         </div>
       </div>
-
-      {/* Content Section */}
-      <div className="flex flex-col items-center justify-center py-10 px-4 lg:px-20">
-        <h1 className="text-xl lg:text-3xl font-serif font-bold text-center mb-4">
-          ISO-CERTIFIED MOBILE APP DEVELOPMENT COMPANY
+      {/* Centered H1 Header */}
+      <div className="flex justify-center mt-8">
+        <h1 className="text-2xl lg:text-4xl font-bold text-center">
+          Elevate Your Online Presence with Cutting-Edge Web Development
         </h1>
-        <p className="text-center text-base lg:text-lg mb-6">
-          “Saigon Technology is an ISO-certified Agile app development company
-          in Vietnam,
-          <br /> specialized in consulting, designing, and developing mobile
-          apps for clients all over the world.
-          <br /> We are convinced that we can manage any request and project
-          nature of our clients, no matter
-          <br /> what field your organization is in or what kind of market they
-          are in.”
-        </p>
-        <img
-          src={mobileImage}
-          className="object-cover w-full max-w-4xl rounded-lg shadow-lg"
-          alt="Mobile Development Process"
-        />
-
-        {/* Contact Us Button */}
-        <Link to="/sub-pages/company/Contactus">
-          <button className="mt-6 border-red-700 bg-red-700 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition duration-300">
-            CONTACT US NOW FOR A FREE QUOTE
-          </button>
-        </Link>
-
-        {/* Title Below the Button */}
-        <h2 className="mt-8 text-center text-xl lg:text-2xl font-semibold">
-          THE SUPERIOR MOBILE APP DEVELOPMENT
-          <br /> SERVICES WE OFFER
-        </h2>
-        {/* Red Underline */}
-        <div className="w-24 h-1 bg-red-500 mt-2"></div>
-
-        {/* Description */}
-        <p className="mt-4 text-center text-base lg:text-lg px-4 lg:px-20">
-          The excellent services we have established for our clients are
-          continually improving. Development, integration, and administration of
-          mobile software applications are all a part of what we do. We
-          constantly appreciate the understanding and strong relationship
-          between Saigon Technology and clients to produce the best potential
-          outcomes, from conception and design through delivery and ongoing
-          support.
-        </p>
-
-        {/* List of Services */}
-        <ul className="mt-4 list-disc list-inside text-base lg:text-lg text-left">
-          <li>iOS app development</li>
-          <li>Custom Ipad app development</li>
-          <li>Android app development</li>
-          <li>UX/UI design</li>
-          <li>Consulting and support throughout the project process</li>
-          <li>Prototyping</li>
-          <li>Monitoring and tracking power use</li>
-          <li>Automated testing and QA</li>
-          <li>After-sale service and care</li>
-        </ul>
       </div>
 
-      {/* New Section */}
-      <div className="flex flex-col items-center justify-center py-10 px-4 lg:px-20 bg-gray-100">
-        <h1 className="text-2xl lg:text-4xl font-serif font-bold text-center mb-4">
-          HOW CAN WE ASSIST YOU WITH THE<br></br> SERVICES WE ARE OFFERING?
-        </h1>
-        {/* Red Underline */}
-        <div className="w-24 h-1 bg-red-500 mt-2 mb-6"></div>
-
-        {/* New Section Description */}
-        <p className="text-center text-base lg:text-lg px-4 lg:px-20">
-          We will undoubtedly deliver the best quality to corporate clients and
-          end-users, better the target customers' experience, and bring many
-          additional advantages to the company with the following service items.
-        </p>
-
-        {/* Card Section */}
-        <div className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden mb-10 mt-5">
-          <div className="flex flex-col lg:flex-row items-center p-5">
-            {/* Left Side: Description and List */}
-            <div className="lg:w-2/3 p-6">
-              <h2 className="text-xl font-semibold mb-4">
-                iOS App Development
-              </h2>
-              <p className="text-base lg:text-lg mb-4">
-                When it comes to developing iPhone applications that are both
-                easy to use and flexible, our top UI/UX designers are the best
-                in the industry. To ensure that your vision becomes a reality,
-                we have the necessary resources and skills. As a result, our
-                customers may rest assured knowing that all of our iPhone app
-                development methods adhere strictly to the tight iOS
-                requirements.
-              </p>
-              <ul className="list-disc list-inside mb-4">
-                <li>Design and Development of iOS Applications</li>
-                <li>Development of iPad Apps</li>
-                <li>Development of Apple Watch apps</li>
-                <li>App Development for Apple TV's App Clips</li>
-              </ul>
-            </div>
-            {/* Right Side: Image */}
-            <div className="lg:w-1/3">
-              <img
-                src={ios}
-                alt="Mobile App Development"
-                className="object-cover w-full h-full"
-              />
-            </div>
-          </div>
-
-          <div className="flex flex-col-reverse lg:flex-row items-center p-5">
-            {/* Left Side: Image */}
-            <div className="lg:w-1/3 w-full">
-              <img
-                src={android}
-                alt="Custom App Development"
-                className="object-cover w-ful h-auto" // Adjust h-auto as needed
-              />
-            </div>
-            {/* Right Side: Description and List */}
-            <div className="lg:w-2/3 p-6">
-              <h2 className="text-xl font-semibold mb-4">
-                Android App Development
-              </h2>
-              <p className="text-base lg:text-lg mb-4">
-                The number of individuals downloading Android apps has risen in
-                tandem with the growing number of people using Android-based
-                mobile devices. The top Android app development firm in Vietnam
-                is here to help our clients remain on top of the latest industry
-                trends and developments.
-              </p>
-              <ul className="list-disc list-inside mb-4">
-                <li>Development of Android Mobile Apps</li>
-                <li>
-                  Creation of mobile applications for Android TV, Tablet, and
-                  Wearables
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="flex flex-col lg:flex-row items-center">
-            {/* Left Side: Description and List */}
-            <div className="lg:w-2/3 p-6">
-              <h2 className="text-xl font-semibold mb-4">
-                App Development for Multiple Platforms
-              </h2>
-              <p className="text-base lg:text-lg mb-4">
-                By acquiring high-quality mobile apps that work across many
-                platforms, you can serve your customers with an app that is
-                compatible with their OS. From there, improve the convenience
-                and speed for users when experiencing the service you provide.
-              </p>
-              <ul className="list-disc list-inside mb-4">
-                <li>Apps for iOS run on various platforms</li>
-                <li>Apps for Android run on various platforms</li>
-                <li>Applications may be used on any device</li>
-              </ul>
-            </div>
-            {/* Right Side: Image */}
-            <div className="lg:w-1/3">
-              <img
-                src={mobile}
-                alt="Mobile App Development"
-                className="object-cover w-full h-full"
-              />
-            </div>
+      {/* Card with Image and Paragraph */}
+      <div className="flex justify-center mt-8">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-xl mb-8">
+          <img
+            src={service}
+            alt="Web Development Overview"
+            className="object-cover w-full"
+          />
+          <div className="p-6">
+            <p className="text-lg text-gray-700">
+              At Sparkware, we specialize in crafting exceptional websites that
+              not only look stunning but also deliver top-notch functionality.
+              Our web development services blend the latest technologies with
+              innovative design principles to ensure your website stands out in
+              today’s competitive digital landscape. Whether you need a sleek
+              corporate site, a dynamic e-commerce platform, or a custom web
+              application, our team of experts is dedicated to bringing your
+              vision to life with precision and creativity.
+            </p>
           </div>
         </div>
       </div>
-      {/* Wave Section */}
-      <div className="relative bg-red-500 text-white py-16">
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-red-500">
-          <svg
-            viewBox="0 0 1440 320"
-            className="absolute inset-x-0 bottom-0"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="#f87171"
-              fillOpacity="1"
-              d="M0,96L30,117.3C60,139,120,181,180,186.7C240,192,300,160,360,149.3C420,139,480,149,540,186.7C600,224,660,288,720,293.3C780,299,840,245,900,229.3C960,213,1020,235,1080,240C1140,245,1200,235,1260,218.7C1320,203,1380,181,1410,170.7L1440,160L1440,320L0,320Z"
-            ></path>
-          </svg>
-        </div>
-        <div className="relative z-10 text-center px-4 lg:px-8">
-          <h2 className="text-3xl font-bold mb-4">Get Started with Us</h2>
-          <p className="text-lg mb-6">
-            Contact us today to take your business to the next level with our
-            expert mobile application development services. Let’s collaborate to
-            create innovative solutions tailored to your needs.
+      <div className="flex justify-center mt-8">
+        <h1 className="text-2xl lg:text-4xl font-bold text-center">
+          Explore Our Services
+        </h1>
+      </div>
+
+      {/* 3x3 Grid of Boxes with Icons */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 px-4 lg:px-20 mb-8">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon1} alt="Service 1 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            Custom App Development
+          </h2>
+          <p className="text-md text-center">
+            We build custom mobile applications tailored to your business
+            requirements, ensuring a seamless user experience on both iOS and
+            Android platforms.
           </p>
-          <a href="/Company/Contactus" className="block">
-            <button className="bg-white text-red-500 py-2 px-6 rounded-full font-semibold">
-              Get in Touch
-            </button>
-          </a>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon2} alt="Service 2 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            Cross-Platform Solution
+          </h2>
+          <p className="text-md text-center">
+            Maximize your reach with cross-platform app development, allowing
+            your app to run smoothly on multiple devices and operating systems.
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon3} alt="Service 3 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">UI/UX Design</h2>
+          <p className="text-md text-center">
+            Our team of designers crafts intuitive and visually appealing
+            interfaces that enhance user engagement and satisfaction.
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon4} alt="Service 4 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">App Integration</h2>
+          <p className="text-md text-center">
+            We integrate your mobile app with existing systems, APIs, and
+            third-party services, ensuring smooth operation and connectivity
+            across all platforms.
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon5} alt="Service 5 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            Performance Optimization
+          </h2>
+          <p className="text-md text-center">
+            We focus on optimizing app performance to ensure fast load times,
+            smooth navigation, and minimal resource consumption.
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon6} alt="Service 6 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            Security and Compliance
+          </h2>
+          <p className="text-md text-center">
+            Protect your users and data with our robust security measures. We
+            adhere to industry standards and best practices to ensure your app
+            is secure and compliant.
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon7} alt="Service 7 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            {" "}
+            Ongoing Maintenance and Support</h2>
+          <p className="text-md text-center">
+            Our commitment to your app doesn’t end at launch. We provide ongoing
+            maintenance and support to keep your app updated, secure, and
+            running smoothly.
+          </p>
+        </div>
+
+        
+      </div>
+
+      {/* Left Image and Right Content Section */}
+      <div className="flex flex-col lg:flex-row justify-center items-center mt-16 px-4 lg:px-20 mb-10">
+        <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <img
+            src={service}
+            alt="Why Choose Us"
+            className="object-cover w-full h-auto"
+          />
+        </div>
+        <div className="w-full lg:w-1/2 lg:pl-8">
+          <h1 className="text-2xl lg:text-4xl font-bold mb-4">
+            Why Choose Us for Mobile App Development?
+          </h1>
+          <ul className="list-disc pl-5 space-y-2">
+            <li className="text-lg text-gray-700">
+              <strong>Expertise in Latest Technologies:</strong> We stay ahead
+              of the curve by leveraging the latest mobile technologies and
+              trends to deliver innovative solutions.
+            </li>
+            <li className="text-lg text-gray-700">
+              <strong>Collaborative Approach:</strong> We work closely with you
+              throughout the development process, ensuring that your vision is
+              brought to life exactly as you imagined.
+            </li>
+            <li className="text-lg text-gray-700">
+              <strong>User-Centric Design:</strong> Our focus on user experience
+              ensures that your app is not only functional but also enjoyable to
+              use, driving higher engagement and satisfaction.
+            </li>
+          </ul>
         </div>
       </div>
     </div>

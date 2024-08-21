@@ -1,16 +1,16 @@
 import React from "react";
 import service from "../../constants/images/services/graphic.jpg";
 
-import icon1 from "../../constants/images/services/simg1.png"; // Replace with actual paths
-import icon2 from "../../constants/images/services/simg2.png";
-import icon3 from "../../constants/images/services/simg3.png";
-import icon4 from "../../constants/images/services/simg4.png";
-import icon5 from "../../constants/images/services/simg5.png";
-import icon6 from "../../constants/images/services/simg6.png";
-import icon7 from "../../constants/images/services/simg7.png";
+import icon1 from "../../constants/images/services/eimg1.png"; // Replace with actual paths
+import icon2 from "../../constants/images/services/eimg2.png";
+import icon3 from "../../constants/images/services/eimg3.png";
+import icon4 from "../../constants/images/services/eimg4.png";
+import icon5 from "../../constants/images/services/eimg5.png";
+import icon6 from "../../constants/images/services/eimg6.png";
+import icon7 from "../../constants/images/services/eimg7.png";
 
 
-const Software = () => {
+const Embedded = () => {
   return (
     <div className="min-h-screen relative">
       {/* Hero Section */}
@@ -18,11 +18,11 @@ const Software = () => {
         <img
           src={service}
           className="object-cover w-full h-full"
-          alt="Embedded System"
+          alt="Graphic Design"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <h1 className="text-2xl lg:text-5xl font-serif font-bold tracking-widest text-white uppercase">
-            Software
+            Embedded System
           </h1>
         </div>
       </div>
@@ -30,7 +30,7 @@ const Software = () => {
       {/* Centered H1 Header */}
       <div className="flex justify-center mt-8">
         <h1 className="text-2xl lg:text-4xl font-bold text-center">
-          Ensuring Your Software Runs Smoothly and Efficiently
+          Innovative Solutions for Complex Challenges
         </h1>
       </div>
 
@@ -44,11 +44,12 @@ const Software = () => {
           />
           <div className="p-6">
             <p className="text-lg text-gray-700">
-              At Sparkware, we understand that maintaining and supporting your
-              software is just as crucial as its development. Our comprehensive
-              software maintenance and support services are designed to keep
-              your systems running at peak performance, ensuring long-term
-              reliability, security, and efficiency.
+              At Sparkware, we specialize in creating advanced embedded systems
+              that integrate seamlessly with your hardware and software to
+              deliver reliable, high-performance solutions. Our expertise in
+              embedded system development allows us to design and implement
+              custom solutions tailored to meet the specific needs of your
+              business and industry.
             </p>
           </div>
         </div>
@@ -64,84 +65,87 @@ const Software = () => {
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
           <img src={icon1} alt="Service 1 Icon" className="w-16 h-16 mb-4" />
           <h2 className="text-lg font-bold text-center">
-            Regular Updates and Upgrades
+            Custom Embedded System Design
           </h2>
           <p className="text-md text-center">
-            We keep your software up-to-date with the latest features,
-            enhancements, and security patches, ensuring it remains compatible
-            with new technologies and industry standards.
+            We design and develop embedded systems from the ground up, tailored
+            to your specific requirements. Whether you need a simple
+            microcontroller-based solution or a complex system with multiple
+            components, we have the expertise to deliver.
           </p>
         </div>
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
           <img src={icon2} alt="Service 2 Icon" className="w-16 h-16 mb-4" />
           <h2 className="text-lg font-bold text-center">
-            Bug Fixing and Troubleshooting
+            Firmware Development
           </h2>
           <p className="text-md text-center">
-            Our team promptly addresses any issues or bugs that arise,
-            minimizing downtime and ensuring your software continues to function
-            smoothly.
+            Our team of experienced developers writes efficient and optimized
+            firmware that ensures your embedded system operates smoothly and
+            reliably under various conditions.
           </p>
         </div>
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
           <img src={icon3} alt="Service 3 Icon" className="w-16 h-16 mb-4" />
           <h2 className="text-lg font-bold text-center">
-            Performance Optimization
+            Hardware Integration
           </h2>
           <p className="text-md text-center">
-            We analyze and optimize your software’s performance to improve
-            speed, efficiency, and resource utilization, helping you get the
-            most out of your system.
+            We ensure seamless integration of your embedded systems with
+            hardware components, optimizing performance and ensuring
+            compatibility across all devices.
           </p>
         </div>
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
           <img src={icon4} alt="Service 4 Icon" className="w-16 h-16 mb-4" />
-          <h2 className="text-lg font-bold text-center">Security Management</h2>
+          <h2 className="text-lg font-bold text-center">IoT Solutions</h2>
           <p className="text-md text-center">
-            Protect your software from potential threats with our robust
-            security management services. We implement and monitor security
-            measures to safeguard your data and ensure compliance with industry
-            regulations.
+            Leverage the power of the Internet of Things (IoT) with our embedded
+            systems designed to connect and communicate with other devices,
+            enhancing automation and data exchange.
           </p>
         </div>
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
           <img src={icon5} alt="Service 5 Icon" className="w-16 h-16 mb-4" />
           <h2 className="text-lg font-bold text-center">
-            Compatibility Testing
+            Prototyping and Testing
           </h2>
           <p className="text-md text-center">
-            As technology evolves, we ensure that your software remains
-            compatible with new hardware, operating systems, and other
-            applications, preventing any disruption to your business operations.
+            We offer rapid prototyping services to help you visualize and test
+            your embedded solutions before full-scale production. Our rigorous
+            testing processes ensure that your systems are reliable and ready
+            for deployment.
           </p>
         </div>
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
           <img src={icon6} alt="Service 6 Icon" className="w-16 h-16 mb-4" />
-          <h2 className="text-lg font-bold text-center">Technical Support</h2>
+          <h2 className="text-lg font-bold text-center">
+            Performance Optimization
+          </h2>
           <p className="text-md text-center">
-            Our dedicated support team is available to assist you with any
-            technical issues, providing prompt and effective solutions to keep
-            your software running smoothly.
+            We focus on optimizing the performance of your embedded systems,
+            ensuring they run efficiently with minimal resource consumption and
+            maximum reliability.
           </p>
         </div>
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
           <img src={icon7} alt="Service 7 Icon" className="w-16 h-16 mb-4" />
           <h2 className="text-lg font-bold text-center">
-            Legacy System Support</h2>
+            Maintenance and Support</h2>
           <p className="text-md text-center">
-            If you’re working with older software, we offer legacy system
-            support to help you maintain and extend the life of your existing
-            systems, avoiding costly overhauls.
+            Our services don’t stop at delivery. We provide ongoing maintenance
+            and support to ensure your embedded systems continue to perform at
+            their best over time.
           </p>
         </div>
 
-       
+        
       </div>
 
       {/* Left Image and Right Content Section */}
@@ -155,38 +159,35 @@ const Software = () => {
         </div>
         <div className="w-full lg:w-1/2 lg:pl-8">
           <h1 className="text-2xl lg:text-4xl font-bold mb-4">
-            Why Choose Us for Software Maintenance and Support?
+            Why Choose Us for Embedded System Development?
           </h1>
           <ul className="list-disc pl-5 space-y-2">
             <li className="text-lg text-gray-700">
-              <strong>Proactive Approach:</strong> We don’t just react to
-              issues; we proactively monitor and maintain your software to
-              prevent problems before they occur, ensuring continuous and
-              reliable operation.
+              <strong>Expertise in Diverse Industries:</strong> We have
+              experience developing embedded systems for various industries,
+              including automotive, healthcare, consumer electronics, and
+              industrial automation.
             </li>
             <li className="text-lg text-gray-700">
-              <strong>Tailored Service Plans:</strong>
-              Our maintenance and support plans are customized to meet the
-              specific needs of your software and business, providing the right
-              level of service at a competitive price.
+              <strong>Cutting-Edge Technology:</strong>
+              We utilize the latest tools and technologies to create innovative
+              embedded solutions that keep you ahead of the competition.
             </li>
             <li className="text-lg text-gray-700">
-              <strong>Expert Team:</strong> Our team of experienced
-              professionals has the expertise to handle a wide range of software
-              systems, from complex enterprise applications to custom-built
-              solutions.
+              <strong>Customized Solutions:</strong> We understand that every
+              project is unique. Our solutions are fully customized to meet your
+              specific needs, ensuring optimal performance and functionality.
             </li>
             <li className="text-lg text-gray-700">
-              <strong>Long-Term Partnership:</strong>
-              We’re committed to building long-term partnerships with our
-              clients. Our focus is on delivering consistent, high-quality
-              support that evolves with your business needs.
+              <strong>Reliable and Scalable:</strong> Our embedded systems are
+              designed to be both reliable and scalable, allowing your business
+              to grow and adapt to changing market demands.
             </li>
             <li className="text-lg text-gray-700">
-              <strong>Fast Response Times:</strong> We understand the importance
-              of timely support. Our team is dedicated to resolving issues
-              quickly and efficiently, minimizing any disruption to your
-              business.
+              <strong>End-to-End Service:</strong> From initial concept to final
+              deployment and beyond, we offer a complete end-to-end service to
+              ensure your embedded systems are delivered on time and within
+              budget.
             </li>
           </ul>
         </div>
@@ -195,4 +196,4 @@ const Software = () => {
   );
 };
 
-export default Software;
+export default Embedded;

@@ -13,11 +13,9 @@ import Contact from "./pages/Contact";
 
 import WebService from "./sub-pages/services/WebService";
 import MobileService from "./sub-pages/services/MobileService";
-
 import GraphicService from "./sub-pages/services/GraphicService";
-
 import SoftwareService from "./sub-pages/services/SoftwareService";
-
+import EmbeddedService from "./sub-pages/services/EmbeddedService";
 
 const App = () => {
   return (
@@ -28,24 +26,17 @@ const App = () => {
           {/* main pages */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          
+
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/career" element={<Career />} />
-          
-
-          
 
           {/* service sub pages */}
           <Route path="/service/web" element={<WebService />} />
           <Route path="/service/mobile" element={<MobileService />} />
-          
           <Route path="/service/graphic" element={<GraphicService />} />
-          
           <Route path="/service/software" element={<SoftwareService />} />
-
-         
-          
+          <Route path="/service/embedded" element={<EmbeddedService />} />
         </Routes>
       </div>
       <Footer />

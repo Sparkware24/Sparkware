@@ -1,7 +1,13 @@
 import React from "react";
 import service from "../../constants/images/services/graphic.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+
+import icon1 from "../../constants/images/services/gimg1.png"; // Replace with actual paths
+import icon2 from "../../constants/images/services/gimg2.png";
+import icon3 from "../../constants/images/services/gimg3.png";
+import icon4 from "../../constants/images/services/gimg4.png";
+import icon5 from "../../constants/images/services/gimg5.png";
+import icon6 from "../../constants/images/services/gimg6.png";
+
 
 const Graphic = () => {
   return (
@@ -20,96 +26,143 @@ const Graphic = () => {
         </div>
       </div>
 
-      {/* Content Section */}
-      <div className="flex flex-col items-center justify-center p-6 text-center">
-        <h1 className="text-3xl font-serif font-bold mb-4">
-          Our Graphic Design Services
+      {/* Centered H1 Header */}
+      <div className="flex justify-center mt-8">
+        <h1 className="text-2xl lg:text-4xl font-bold text-center">
+          Creating Visuals That Speak Volumes
         </h1>
-
-        <p className="mb-4 text-justify max-w-4xl">
-          Graphic Designing in your website is the most important, needed
-          effectively to attract customers to your Company. People are conscious
-          of how others see them. As much as possible people demonstrate a
-          strong sense of individualism so that they’ll have a distinct and
-          recognizable personality through your website.
-        </p>
-        <p className="mb-4 text-justify max-w-4xl">
-          Our designs don't stop at just being unique and attractive. Our team
-          of highly experienced and talented designers deliver designs that are
-          user friendly, meet international standards and most importantly, make
-          a significant contribution to the bottom line of every client.
-        </p>
-        <p className="mb-4 text-justify max-w-4xl">
-          We deliver a comprehensive graphic design solution that is unmatched
-          by any other company in Sri Lanka for all your advertising & marketing
-          needs.
-        </p>
-        <ul className="list-disc list-inside text-justify max-w-4xl">
-          <li className="mb-2 flex items-center">
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="text-red-500 mr-2"
-            />
-            Logo Design
-          </li>
-          <li className="mb-2 flex items-center">
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="text-red-500 mr-2"
-            />
-            Banner Design
-          </li>
-          <li className="mb-2 flex items-center">
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="text-red-500 mr-2"
-            />
-            Advertisement Design
-          </li>
-          <li className="mb-2 flex items-center">
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="text-red-500 mr-2"
-            />
-            Creative Slider Image Design
-          </li>
-          <li className="mb-2 flex items-center">
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="text-red-500 mr-2"
-            />
-            Flash and Interactive Design
-          </li>
-        </ul>
       </div>
-      {/* Wave Section */}
-      <div className="relative bg-red-500 text-white py-16">
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-red-500">
-          <svg
-            viewBox="0 0 1440 320"
-            className="absolute inset-x-0 bottom-0"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="#f87171"
-              fillOpacity="1"
-              d="M0,96L30,117.3C60,139,120,181,180,186.7C240,192,300,160,360,149.3C420,139,480,149,540,186.7C600,224,660,288,720,293.3C780,299,840,245,900,229.3C960,213,1020,235,1080,240C1140,245,1200,235,1260,218.7C1320,203,1380,181,1410,170.7L1440,160L1440,320L0,320Z"
-            ></path>
-          </svg>
+
+      {/* Card with Image and Paragraph */}
+      <div className="flex justify-center mt-8">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-xl mb-8">
+          <img
+            src={service}
+            alt="Web Development Overview"
+            className="object-cover w-full"
+          />
+          <div className="p-6">
+            <p className="text-lg text-gray-700">
+              At Sparkware, we understand the power of compelling visuals in
+              communicating your brand’s message. Our graphic design services
+              are tailored to help your business stand out with eye-catching
+              designs that capture attention and leave a lasting impression.
+            </p>
+          </div>
         </div>
-        <div className="relative z-10 text-center px-4 lg:px-8">
-          <h2 className="text-3xl font-bold mb-4">Get Started with Us</h2>
-          <p className="text-lg mb-6">
-            Contact us today to elevate your brand with our expert graphic
-            design services. Let’s collaborate to create stunning visuals that
-            make a lasting impression.
+      </div>
+      <div className="flex justify-center mt-8">
+        <h1 className="text-2xl lg:text-4xl font-bold text-center">
+          Explore Our Services
+        </h1>
+      </div>
+
+      {/* 3x3 Grid of Boxes with Icons */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 px-4 lg:px-20 mb-8">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon1} alt="Service 1 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            Brand Identity Design
+          </h2>
+          <p className="text-md text-center">
+            We create complete brand identities, including logos, color schemes,
+            typography, and branding guidelines that reflect your business’s
+            values and vision.
           </p>
-          <a href="/Company/Contactus" className="block">
-            <button className="bg-white text-red-500 py-2 px-6 rounded-full font-semibold">
-              Get in Touch
-            </button>
-          </a>
-          
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon2} alt="Service 2 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">Marketing Materials</h2>
+          <p className="text-md text-center">
+            From brochures and flyers to banners and posters, we design
+            marketing materials that effectively communicate your message and
+            resonate with your target audience.
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon3} alt="Service 3 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">Digital Graphics</h2>
+          <p className="text-md text-center">
+            Enhance your online presence with custom-designed graphics for
+            websites, social media, and digital ads that engage users and drive
+            interaction.
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon4} alt="Service 4 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">Packaging Design</h2>
+          <p className="text-md text-center">
+            We design product packaging that not only looks great on the shelf
+            but also reinforces your brand’s identity and appeals to consumers.
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon5} alt="Service 5 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">Infographics</h2>
+          <p className="text-md text-center">
+            Simplify complex information with visually appealing infographics
+            that make data and concepts easier to understand and more engaging.
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon6} alt="Service 6 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">Illustrations</h2>
+          <p className="text-md text-center">
+            Our custom illustrations add a unique and creative touch to your
+            projects, making your content more memorable and impactful.
+          </p>
+        </div>
+
+        
+      </div>
+
+      {/* Left Image and Right Content Section */}
+      <div className="flex flex-col lg:flex-row justify-center items-center mt-16 px-4 lg:px-20 mb-10">
+        <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <img
+            src={service}
+            alt="Why Choose Us"
+            className="object-cover w-full h-auto"
+          />
+        </div>
+        <div className="w-full lg:w-1/2 lg:pl-8">
+          <h1 className="text-2xl lg:text-4xl font-bold mb-4">
+            Why Choose Us for Graphic Design?
+          </h1>
+          <ul className="list-disc pl-5 space-y-2">
+            <li className="text-lg text-gray-700">
+              <strong>Creative Excellence: </strong> Our team of talented
+              designers brings creativity and innovation to every project,
+              ensuring your designs are fresh, unique, and aligned with your
+              brand.
+            </li>
+            <li className="text-lg text-gray-700">
+              <strong>Tailored Solutions:</strong> We take a personalized
+              approach to design, working closely with you to understand your
+              vision and deliver designs that meet your specific needs.
+            </li>
+            <li className="text-lg text-gray-700">
+              <strong>Attention to Detail:</strong> We pride ourselves on our
+              meticulous attention to detail, ensuring that every element of
+              your design is perfectly executed.
+            </li>
+            <li className="text-lg text-gray-700">
+              <strong>Consistency Across Platforms:</strong> We ensure that your
+              brand’s visual identity is consistent across all platforms, from
+              print to digital, helping you maintain a cohesive and professional
+              image.
+            </li>
+            <li className="text-lg text-gray-700">
+              <strong>Timely Delivery:</strong> We understand the importance of
+              meeting deadlines. Our efficient design process ensures that your
+              projects are completed on time, without compromising on quality.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
