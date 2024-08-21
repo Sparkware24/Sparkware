@@ -4,6 +4,7 @@ import { faFacebook,  faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Styles.css";
 import { Link } from "react-router-dom";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import logo from "../constants/images/logo.png";
 
 function Footer() {
   return (
@@ -76,6 +77,13 @@ function Footer() {
               </Link>
             </li>
           </ul>
+        </div>
+        <div className="flex flex-col sm:flex-row items-center">
+          <img
+            src={logo}
+            alt="logo"
+            className="w-[250px] h-auto mx-auto sm:mx-0"
+          />
         </div>
       </div>
 

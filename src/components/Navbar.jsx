@@ -35,6 +35,8 @@ const Navbar = () => {
             Sparkware
           </span>
         </div>
+
+        {/* Desktop Links */}
         <div className="hidden xl:flex space-x-1 ml-auto">
           {LINKS?.map((link, index) => (
             <div
@@ -115,11 +117,11 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* WhatsApp Button with Mobile Icon */}
+        {/* WhatsApp Button for Large Screens Only */}
         <Link
           to="#"
           onClick={() => window.open("https://wa.me/94786542882", "_blank")}
-          className="ml-4"
+          className="ml-4 hidden xl:block"
         >
           <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center">
             <PhoneIcon className="w-5 h-5 text-white mr-2" />
@@ -127,6 +129,7 @@ const Navbar = () => {
           </button>
         </Link>
 
+        {/* Hamburger Icon for Mobile Devices */}
         <div className="xl:hidden">
           <button onClick={toggleNavbar}>
             <Bars3Icon className="w-6 h-6 text-white" />
@@ -134,7 +137,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Side bar */}
+      {/* Side Bar for Mobile Devices */}
       <div
         className={`fixed top-0 right-0 h-full overflow-y-auto bg-blue-950 text-white transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
@@ -184,6 +187,18 @@ const Navbar = () => {
             )}
           </div>
         ))}
+
+        {/* WhatsApp Button in Sidebar for Mobile Devices */}
+        <Link
+          to="#"
+          onClick={() => window.open("https://wa.me/94786542882", "_blank")}
+          className="block mt-4 ml-8"
+        >
+          <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center">
+            <PhoneIcon className="w-5 h-5 text-white mr-2" />
+            +9478 654 2882
+          </button>
+        </Link>
       </div>
     </nav>
   );
