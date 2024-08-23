@@ -24,7 +24,7 @@ const projects = [
   },
   {
     imageUrl: projectw2,
-    name: "Project Three",
+    name: "Travel Lanka",
     description:
       "A responsive travel website offering holiday packages and tours, where customers can explore options and make online reservations seamlessly.",
   },

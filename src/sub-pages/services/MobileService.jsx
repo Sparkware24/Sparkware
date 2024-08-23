@@ -1,7 +1,7 @@
 import React from "react";
 
-import header from "../../constants/images/services/mobile.jpg";
-import service from "../../constants/images/services/mobile.jpg";
+import header from "../../constants/images/services/mobile1.jpg";
+import service from "../../constants/images/services/mobile1.jpg";
 import icon1 from "../../constants/images/services/mimg1.png"; // Replace with actual paths
 import icon2 from "../../constants/images/services/mimg2.png";
 import icon3 from "../../constants/images/services/mimg3.png";

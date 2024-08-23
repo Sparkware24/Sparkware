@@ -137,15 +137,14 @@ const Embedded = () => {
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
           <img src={icon7} alt="Service 7 Icon" className="w-16 h-16 mb-4" />
           <h2 className="text-lg font-bold text-center">
-            Maintenance and Support</h2>
+            Maintenance and Support
+          </h2>
           <p className="text-md text-center">
             Our services don’t stop at delivery. We provide ongoing maintenance
             and support to ensure your embedded systems continue to perform at
             their best over time.
           </p>
         </div>
-
-        
       </div>
 
       {/* Left Image and Right Content Section */}

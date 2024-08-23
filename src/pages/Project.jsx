@@ -1,10 +1,10 @@
 // src/components/ProjectPage.js
 import React from "react";
 import heading from "../constants/images/projects/slide4.jpg";
-import image1 from "../constants/images/projects/slide4.jpg"; // Example images
-import image2 from "../constants/images/projects/slide4.jpg";
-import image3 from "../constants/images/projects/slide4.jpg";
-import image4 from "../constants/images/projects/slide4.jpg";
+import web1 from "../constants/images/projects/portfolio1.png"; // Example images
+import web2 from "../constants/images/projects/travel1.png";
+import embedded1 from "../constants/images/projects/embedded1.png";
+
 
 const ProjectPage = () => {
   return (
@@ -57,38 +57,51 @@ const ProjectPage = () => {
           {/* Box 1 */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
             <img
-              src={image1}
+              src={web1}
               alt="Project 1"
               className="w-full h-40 object-cover rounded-md mb-4"
             />
-            <h3 className="text-lg font-semibold mb-2">Project Title 1</h3>
+            <h3 className="text-lg font-semibold mb-2">Portfolio</h3>
             <p className="text-gray-600 mb-4">
-              A brief description of the project goes here, highlighting the key
-              aspects and outcomes.
+              An innovative showcase of diverse projects, blending creativity
+              and technical expertise to deliver impactful digital solutions.
             </p>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
-              Read More
-            </button>
+            <a
+              href="https://shammisk.github.io/portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                Read More
+              </button>
+            </a>
           </div>
 
           {/* Box 2 */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
             <img
-              src={image2}
+              src={web2}
               alt="Project 2"
               className="w-full h-40 object-cover rounded-md mb-4"
             />
-            <h3 className="text-lg font-semibold mb-2">Project Title 2</h3>
+            <h3 className="text-lg font-semibold mb-2">Travel</h3>
             <p className="text-gray-600 mb-4">
-              A brief description of the project goes here, highlighting the key
-              aspects and outcomes.
+              A responsive travel website offering holiday packages and tours,
+              where customers can explore options and make online reservations
+              seamlessly.
             </p>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
-              Read More
-            </button>
+            <a
+              href="https://shammisk.github.io/portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                Read More
+              </button>
+            </a>
           </div>
 
-          {/* Box 3 */}
+          {/* Box 3 
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
             <img
               src={image3}
@@ -105,7 +118,7 @@ const ProjectPage = () => {
             </button>
           </div>
 
-          {/* Box 4 */}
+          {/* Box 4 
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
             <img
               src={image4}
@@ -120,7 +133,7 @@ const ProjectPage = () => {
             <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
               Read More
             </button>
-          </div>
+          </div>*/}
         </div>
       </section>
       {/* New Section with Background Color, Title, and Paragraph */}
@@ -145,14 +158,17 @@ const ProjectPage = () => {
           {/* Box 1 */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
             <img
-              src={image1}
+              src={embedded1}
               alt="Project 1"
               className="w-full h-40 object-cover rounded-md mb-4"
             />
-            <h3 className="text-lg font-semibold mb-2">Project Title 1</h3>
+            <h3 className="text-lg font-semibold mb-2">
+              Temperature & Humidity Controller Unit
+            </h3>
             <p className="text-gray-600 mb-4">
-              A brief description of the project goes here, highlighting the key
-              aspects and outcomes.
+              This unit is designed to maintain temperature and humidity at the
+              desired level by automatically turning on and off. It is
+              specifically designed for mushroom huts.
             </p>
             <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
               Read More
@@ -160,6 +176,7 @@ const ProjectPage = () => {
           </div>
 
           {/* Box 2 */}
+          {/*}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
             <img
               src={image2}
@@ -176,7 +193,7 @@ const ProjectPage = () => {
             </button>
           </div>
 
-          {/* Box 3 */}
+          {/* Box 3 
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
             <img
               src={image3}
@@ -193,7 +210,7 @@ const ProjectPage = () => {
             </button>
           </div>
 
-          {/* Box 4 */}
+          {/* Box 4 
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
             <img
               src={image4}
@@ -208,7 +225,7 @@ const ProjectPage = () => {
             <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
               Read More
             </button>
-          </div>
+          </div>*/}
         </div>
       </section>
 
