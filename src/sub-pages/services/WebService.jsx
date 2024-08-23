@@ -1,5 +1,8 @@
 import React from "react";
-import service from "../../constants/images/services/webabout.jpg";
+
+import heading from "../../constants/images/services/web1.png";
+import service from "../../constants/images/services/web2.jpg";
+import service1 from "../../constants/images/services/web3.jpg";
 import icon1 from "../../constants/images/services/personal-info.png"; // Replace with actual paths
 import icon2 from "../../constants/images/services/e-learning.png";
 import icon3 from "../../constants/images/services/analytics.png";
@@ -69,7 +72,7 @@ const Web = () => {
       {/* Header Image Section */}
       <div className="relative w-full h-[50vh]">
         <img
-          src={service}
+          src={heading}
           className="object-cover w-full h-full"
           alt="Web Development"
         />
@@ -176,7 +179,7 @@ const Web = () => {
       <div className="flex flex-col md:flex-row items-center mt-12 px-4 lg:px-20 mb-8">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <img
-            src={service}
+            src={service1}
             alt="Web Development"
             className="object-cover w-full h-auto rounded-lg shadow-lg"
           />

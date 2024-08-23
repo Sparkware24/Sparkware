@@ -1,5 +1,7 @@
 import React from "react";
-import service from "../../constants/images/services/graphic.jpg";
+import heading from "../../constants/images/services/main1.jpg";
+import service from "../../constants/images/services/main2.jpg";
+import service1 from "../../constants/images/services/main3.jpg";
 
 import icon1 from "../../constants/images/services/simg1.png"; // Replace with actual paths
 import icon2 from "../../constants/images/services/simg2.png";
@@ -16,7 +18,7 @@ const Software = () => {
       {/* Hero Section */}
       <div className="relative w-full h-[50vh]">
         <img
-          src={service}
+          src={heading}
           className="object-cover w-full h-full"
           alt="Embedded System"
         />
@@ -148,7 +150,7 @@ const Software = () => {
       <div className="flex flex-col lg:flex-row justify-center items-center mt-16 px-4 lg:px-20 mb-10">
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
           <img
-            src={service}
+            src={service1}
             alt="Why Choose Us"
             className="object-cover w-full h-auto"
           />
