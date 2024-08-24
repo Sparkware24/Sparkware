@@ -1,80 +1,29 @@
 import React from "react";
 
-import heading from "../../constants/images/services/web1.png";
+import header from "../../constants/images/services/web1.png";
 import service from "../../constants/images/services/web2.jpg";
 import service1 from "../../constants/images/services/web3.jpg";
-import icon1 from "../../constants/images/services/personal-info.png"; // Replace with actual paths
-import icon2 from "../../constants/images/services/e-learning.png";
-import icon3 from "../../constants/images/services/analytics.png";
-import icon4 from "../../constants/images/services/travel-website.png";
-import icon5 from "../../constants/images/services/order-food.png";
-import icon6 from "../../constants/images/services/doctor.png";
-import icon7 from "../../constants/images/services/coding.png";
+import icon1 from "../../constants/images/services/coding.png"; // Replace with actual paths
+import icon2 from "../../constants/images/services/api.png";
+import icon3 from "../../constants/images/services/cms.png";
+import icon4 from "../../constants/images/services/responsive.png";
+import icon5 from "../../constants/images/services/simg3.png";
+import icon6 from "../../constants/images/services/simg4.png";
+import icon7 from "../../constants/images/services/custom.png";
 import icon8 from "../../constants/images/services/online-shop.png";
-import icon9 from "../../constants/images/services/computer.png";
 
 
 
-const boxes = [
-  {
-    title: "Back-end Development",
-    description:
-      "At the core of our web application development, we engineer robust, scalable, and secure server-side solutions. Our expertise lies in knitting together advanced databases and server technologies, forming the backbone of high-performance web applications.",
-    icon: icon1,
-  },
-  {
-    title: "Front-end Development",
-    description:
-      "We excel in crafting front-end designs for web apps, focusing on intuitive, user-friendly interfaces. Harnessing the latest technological advancements, we ensure our applications are not just visually appealing but also offer seamless interactivity.",
-    icon: icon2,
-  },
-  {
-    title: "Custom Web App Development",
-    description:
-      "We delve into creating custom web app development that resonates with your specific business needs and focuses on the user experience, user interface, scalability and flexibility, offering tailor-made digital solutions.",
-    icon: icon4,
-  },
-  {
-    title: "Web Portal Development",
-    description:
-      "As a part of our service spectrum, we develop dynamic web portals with several integration capabilities. These portals amalgamate various online services into one engaging platform, thereby enriching user interaction and experience.",
-    icon: icon5,
-  },
-  {
-    title: "Progressive Web Apps Development",
-    description:
-      "We are at the forefront of creating Progressive Web Apps (PWAs), blending the best features of web and mobile applications with cross-platform capabilities. These PWAs are engineered for high performance and reliability, ensuring seamless functionality across all devices.",
-    icon: icon6,
-  },
-  {
-    title: "Mobile Responsive Web Apps",
-    description:
-      "Our focus on mobile-responsive web apps ensures optimal viewing and functionality across a multitude of devices, catering to the modern user's needs with responsive design techniques and fluid grid layouts.",
-    icon: icon7,
-  },
-  {
-    title: "Integration and Testing",
-    description:
-      "The team seamlessly integrates third-party services and APIs, conducting thorough unit, integration, and user acceptance testing to identify and resolve bugs, ensuring high-quality web applications tailored to your specific needs.",
-    icon: icon8,
-  },
-  {
-    title: "Application Support & Maintenance",
-    description:
-      "Our commitment extends beyond deployment. We provide continuous support and maintenance with ongoing technical support, ensuring the web applications remain up-to-date with upgrades and security management.",
-    icon: icon9,
-  },
-];
 
 const Web = () => {
   return (
     <div className="min-h-screen relative">
-      {/* Header Image Section */}
+      {/* Hero Section */}
       <div className="relative w-full h-[50vh]">
         <img
-          src={heading}
+          src={header}
           className="object-cover w-full h-full"
-          alt="Web Development"
+          alt="Mobile Development"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <h1 className="text-2xl lg:text-5xl font-serif font-bold tracking-widest text-white uppercase">
@@ -82,11 +31,10 @@ const Web = () => {
           </h1>
         </div>
       </div>
-
       {/* Centered H1 Header */}
       <div className="flex justify-center mt-8">
         <h1 className="text-2xl lg:text-4xl font-bold text-center">
-          Elevate Your Online Presence with Cutting-Edge Web Development
+          Building Robust, Scalable, and User-Centric Web Applications
         </h1>
       </div>
 
@@ -100,19 +48,15 @@ const Web = () => {
           />
           <div className="p-6">
             <p className="text-lg text-gray-700">
-              At Sparkware, we specialize in crafting exceptional websites that
-              not only look stunning but also deliver top-notch functionality.
-              Our web development services blend the latest technologies with
-              innovative design principles to ensure your website stands out in
-              today’s competitive digital landscape. Whether you need a sleek
-              corporate site, a dynamic e-commerce platform, or a custom web
-              application, our team of experts is dedicated to bringing your
-              vision to life with precision and creativity.
+              At Sparkware, we specialize in developing high-performance web
+              applications that are tailored to meet the unique needs of your
+              business. Our web applications are designed to be secure,
+              scalable, and user-friendly, providing your users with a seamless
+              and engaging online experience.
             </p>
           </div>
         </div>
       </div>
-
       <div className="flex justify-center mt-8">
         <h1 className="text-2xl lg:text-4xl font-bold text-center">
           Explore Our Services
@@ -122,117 +66,148 @@ const Web = () => {
       {/* 3x3 Grid of Boxes with Icons */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 px-4 lg:px-20 mb-8">
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
-          <img src={icon1} alt="Service 1 Icon" className="w-16 h-16 mb-4" />
+          <img src={icon7} alt="Service 1 Icon" className="w-16 h-16 mb-4" />
           <h2 className="text-lg font-bold text-center">
-            Personal/Portfolio Website
+            Custom Web Application Development
           </h2>
+          <p className="text-md text-center">
+            We create custom web applications that align perfectly with your
+            business objectives, offering tailored features and functionality to
+            enhance your operations.
+          </p>
         </div>
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
-          <img src={icon2} alt="Service 2 Icon" className="w-16 h-16 mb-4" />
-          <h2 className="text-lg font-bold text-center">Education Website</h2>
-        </div>
-
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
-          <img src={icon3} alt="Service 3 Icon" className="w-16 h-16 mb-4" />
-          <h2 className="text-lg font-bold text-center">Business Website</h2>
-        </div>
-
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
-          <img src={icon4} alt="Service 4 Icon" className="w-16 h-16 mb-4" />
-          <h2 className="text-lg font-bold text-center">Travel Website</h2>
-        </div>
-
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
-          <img src={icon5} alt="Service 5 Icon" className="w-16 h-16 mb-4" />
+          <img src={icon1} alt="Service 2 Icon" className="w-16 h-16 mb-4" />
           <h2 className="text-lg font-bold text-center">
-            Food & Restaurant Website
+            Full-Stack Development
           </h2>
+          <p className="text-md text-center">
+            Our expertise spans both frontend and backend development, ensuring
+            that your web application is not only visually appealing but also
+            highly functional and efficient.
+          </p>
         </div>
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
-          <img src={icon6} alt="Service 6 Icon" className="w-16 h-16 mb-4" />
+          <img src={icon4} alt="Service 3 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">Responsive Design</h2>
+          <p className="text-md text-center">
+            We design web applications that look and perform beautifully on any
+            device, whether it’s a desktop, tablet, or smartphone, providing a
+            consistent user experience across all platforms.
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon2} alt="Service 4 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">API Integration</h2>
+          <p className="text-md text-center">
+            We integrate your web application with third-party services and APIs
+            to extend its capabilities and ensure seamless communication between
+            different systems.
+          </p>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon8} alt="Service 5 Icon" className="w-16 h-16 mb-4" />
           <h2 className="text-lg font-bold text-center">
-            Health & Fitness Website
+            E-commerce Solutions
           </h2>
+          <p className="text-md text-center">
+            Our e-commerce web applications are built to drive sales and enhance
+            customer engagement, with features such as shopping carts, payment
+            gateways, and inventory management.
+          </p>
         </div>
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
-          <img src={icon7} alt="Service 7 Icon" className="w-16 h-16 mb-4" />
-          <h2 className="text-lg font-bold text-center">Custom Website</h2>
-        </div>
-
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
-          <img src={icon8} alt="Service 8 Icon" className="w-16 h-16 mb-4" />
-          <h2 className="text-lg font-bold text-center">Ecommerce Website</h2>
-        </div>
-
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
-          <img src={icon9} alt="Service 9 Icon" className="w-16 h-16 mb-4" />
+          <img src={icon3} alt="Service 6 Icon" className="w-16 h-16 mb-4" />
           <h2 className="text-lg font-bold text-center">
-            Custom Web Applications
+            Content Management Systems (CMS)
           </h2>
+          <p className="text-md text-center">
+            We develop user-friendly CMS platforms that allow you to easily
+            manage and update your website’s content without needing technical
+            expertise.
+          </p>
         </div>
-      </div>
 
-      {/* Left Side Image and Right Side Paragraph */}
-      <div className="flex flex-col md:flex-row items-center mt-12 px-4 lg:px-20 mb-8">
-        <div className="md:w-1/2 mb-8 md:mb-0">
-          <img
-            src={service1}
-            alt="Web Development"
-            className="object-cover w-full h-auto rounded-lg shadow-lg"
-          />
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon5} alt="Service 7 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            {" "}
+            Performance Optimization
+          </h2>
+          <p className="text-md text-center">
+            We focus on optimizing the speed and efficiency of your web
+            application, ensuring fast load times, smooth navigation, and a
+            superior user experience.
+          </p>
         </div>
-        <div className="md:w-1/2 md:pl-8">
-          <p className="text-lg text-gray-700">
-            Our approach to web development is all about balancing form and
-            function. We focus on creating user-centric designs that not only
-            captivate your audience but also drive engagement and conversions.
-            From responsive layouts to intuitive interfaces, every aspect of our
-            development process is tailored to meet your specific needs and
-            objectives. Let us help you build a digital presence that makes a
-            lasting impression.
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
+          <img src={icon6} alt="Service 7 Icon" className="w-16 h-16 mb-4" />
+          <h2 className="text-lg font-bold text-center">
+            {" "}
+            Security and Compliance
+          </h2>
+          <p className="text-md text-center">
+            We implement robust security measures to protect your web
+            application from threats, ensuring that your data and user
+            information are safe and compliant with industry standards.
           </p>
         </div>
       </div>
-      <section className="p-10 bg-gray-200 text-center lg:mt-10">
-        <h1 className="text-2xl lg:text-3xl font-bold text-blue-600 mb-5 font-serif">
-          Our Web Application Development Services
-        </h1>
-        <p className="text-xl text-gray-700 mb-10 sm:px-5 lg:px-232 xl:px-52">
-          Embarking on a digital transformation journey, our company emerges as
-          a vanguard in web application development services. Our team's
-          commitment extends from the germination of an idea to its flourishing
-          into a fully-fledged digital entity, ensuring meticulous attention to
-          every detail throughout the process.
-        </p>
 
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-10">
-            {boxes.map((box, index) => (
-              <div
-                key={index}
-                className="relative bg-white border-2 border-gray-200 rounded-lg p-4 shadow-md flex flex-col items-start h-auto sm:h-[450px] md:h-[400px] w-72 md:w-80 mx-auto"
-              >
-                <img
-                  src={box.icon}
-                  className="absolute top-4 left-4 w-12 h-12"
-                  alt={`Icon ${index + 1}`}
-                />
-                <h2 className="text-xl font-semibold text-blue-600 mt-14 mb-2 text-start">
-                  {box.title}
-                </h2>
-                <p className="text-start text-lg text-gray-700">
-                  {box.description}
-                </p>
-              </div>
-            ))}
-          </div>
+      {/* Left Image and Right Content Section */}
+      <div className="flex flex-col lg:flex-row justify-center items-center mt-16 px-4 lg:px-20 mb-10">
+        <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <img
+            src={service1}
+            alt="Why Choose Us"
+            className="object-cover w-full h-auto"
+          />
         </div>
-      </section>
+        <div className="w-full lg:w-1/2 lg:pl-8">
+          <h1 className="text-2xl lg:text-4xl font-bold mb-4">
+            Why Choose Us for Web Application Development?
+          </h1>
+          <ul className="list-disc pl-5 space-y-2">
+            <li className="text-lg text-gray-700">
+              <strong>Experienced Team:</strong> Our team of skilled developers
+              has extensive experience in building web applications across
+              various industries, ensuring that your project is in expert hands.
+            </li>
+            <li className="text-lg text-gray-700">
+              <strong>User-Centric Approach:</strong> We prioritize the end-user
+              experience, designing intuitive interfaces and smooth interactions
+              that keep users engaged and satisfied.
+            </li>
+            <li className="text-lg text-gray-700">
+              <strong>Agile Development Process:</strong>
+              We use agile methodologies to deliver your web application on time
+              and within budget, allowing for flexibility and collaboration
+              throughout the project.
+            </li>
+            <li className="text-lg text-gray-700">
+              <strong> Continuous Support:</strong>
+              Our relationship doesn’t end at launch. We provide ongoing support
+              and maintenance to keep your web application running smoothly and
+              up-to-date with the latest technologies.
+            </li>
+            <li className="text-lg text-gray-700">
+              <strong>Scalable Solutions:</strong>
+              As your business grows, your web application needs to scale with
+              it. We build scalable solutions that can evolve and expand
+              alongside your business.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
+
 
 export default Web;

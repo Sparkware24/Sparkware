@@ -2,7 +2,7 @@ import React from "react";
 import CounterExp from "../components/CounterExp";
 import heading from "../constants/images/about/slide2.jpg";
 import left from "../constants/images/home/left.jpg";
-import cardImage from "../constants/images/about/vision-mission.png"; // Replace with your actual image path
+import cardImage from "../constants/images/about/vision-mission.jpg"; // Replace with your actual image path
 
 const CompanyPage = () => {
   return (
@@ -55,14 +55,14 @@ const CompanyPage = () => {
       {/* Centered Card with Vision and Mission */}
       <div className="flex justify-center items-center my-16">
         <div className="w-full lg:w-3/4 bg-white shadow-lg rounded-lg overflow-hidden">
-          <div className="flex justify-center items-center bg-gray-100">
+          <div className="flex justify-center items-center bg-white">
             <img
               src={cardImage}
               alt="Card"
               className="h-64 object-contain" // Increased the height from h-48 to h-64
             />
           </div>
-          <div className="p-8 lg:flex lg:space-x-8">
+          <div className="p-8 lg:flex lg:space-x-8 bg-gray-100">
             <div className="lg:w-1/2 mb-8 lg:mb-0">
               <h2 className="text-xl font-bold mb-4 text-blue-950">
                 Our Vision
