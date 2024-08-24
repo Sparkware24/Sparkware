@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sparkware/static/css/main.fb028ca1.css",
-    "main.js": "/sparkware/static/js/main.1f9792fa.js",
+    "main.js": "/sparkware/static/js/main.05b1be37.js",
     "static/js/453.80d3527b.chunk.js": "/sparkware/static/js/453.80d3527b.chunk.js",
     "static/media/embedded1.png": "/sparkware/static/media/embedded1.840d46e329e21eec1ab9.png",
     "static/media/slide1.jpg": "/sparkware/static/media/slide1.f1e3f6efe618b2df1fca.jpg",
@@ -23,15 +23,15 @@
     "static/media/contact-us.jpg": "/sparkware/static/media/contact-us.7b81e87aedcefe8fa4c8.jpg",
     "static/media/right.jpg": "/sparkware/static/media/right.f362780e6dc75959bef8.jpg",
     "static/media/slide4.jpg": "/sparkware/static/media/slide4.6b91ac1d0f575ff64bcc.jpg",
+    "static/media/mob3.jpg": "/sparkware/static/media/mob3.a4309246c5ce3727ca8e.jpg",
     "static/media/mob.jpg": "/sparkware/static/media/mob.1907a39cfe8ab93a7d95.jpg",
     "static/media/main1.jpg": "/sparkware/static/media/main1.354e74ffa37244136a77.jpg",
     "static/media/mob2.jpg": "/sparkware/static/media/mob2.29a26673dc51d8092676.jpg",
     "static/media/fa-brands-400.woff2": "/sparkware/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
     "static/media/gra1.jpg": "/sparkware/static/media/gra1.9978f78b36448369d850.jpg",
     "static/media/contact-head.jpg": "/sparkware/static/media/contact-head.5ff1a18506e88098cbc3.jpg",
-    "static/media/mob3.jpg": "/sparkware/static/media/mob3.47619b8fb6137060d21d.jpg",
     "static/media/js.png": "/sparkware/static/media/js.649a896f8c09e1c99df5.png",
-    "static/media/web3.jpg": "/sparkware/static/media/web3.68fccfdad2b119509b64.jpg",
+    "static/media/web3.jpg": "/sparkware/static/media/web3.84e5b4305c86ae90e1c8.jpg",
     "static/media/main3.jpg": "/sparkware/static/media/main3.9c3ba807a4243bb351bc.jpg",
     "static/media/react.png": "/sparkware/static/media/react.14875e789264896826f6.png",
     "static/media/python.png": "/sparkware/static/media/python.1149565b3e9e9d2d007a.png",
@@ -55,11 +55,11 @@
     "static/media/fa-v4compatibility.woff2": "/sparkware/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/sparkware/index.html",
     "main.fb028ca1.css.map": "/sparkware/static/css/main.fb028ca1.css.map",
-    "main.1f9792fa.js.map": "/sparkware/static/js/main.1f9792fa.js.map",
+    "main.05b1be37.js.map": "/sparkware/static/js/main.05b1be37.js.map",
     "453.80d3527b.chunk.js.map": "/sparkware/static/js/453.80d3527b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb028ca1.css",
-    "static/js/main.1f9792fa.js"
+    "static/js/main.05b1be37.js"
   ]
 }
