@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sparkware/static/css/main.15f70379.css",
-    "main.js": "/sparkware/static/js/main.03fee8c3.js",
+    "main.css": "/sparkware/static/css/main.dc498537.css",
+    "main.js": "/sparkware/static/js/main.38965827.js",
     "static/js/453.80d3527b.chunk.js": "/sparkware/static/js/453.80d3527b.chunk.js",
     "static/media/embedded1.png": "/sparkware/static/media/embedded1.840d46e329e21eec1ab9.png",
     "static/media/slide1.jpg": "/sparkware/static/media/slide1.f1e3f6efe618b2df1fca.jpg",
@@ -54,12 +54,12 @@
     "static/media/eimg6.png": "/sparkware/static/media/eimg6.a849943348cb1641c8f0.png",
     "static/media/fa-v4compatibility.woff2": "/sparkware/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/sparkware/index.html",
-    "main.15f70379.css.map": "/sparkware/static/css/main.15f70379.css.map",
-    "main.03fee8c3.js.map": "/sparkware/static/js/main.03fee8c3.js.map",
+    "main.dc498537.css.map": "/sparkware/static/css/main.dc498537.css.map",
+    "main.38965827.js.map": "/sparkware/static/js/main.38965827.js.map",
     "453.80d3527b.chunk.js.map": "/sparkware/static/js/453.80d3527b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15f70379.css",
-    "static/js/main.03fee8c3.js"
+    "static/css/main.dc498537.css",
+    "static/js/main.38965827.js"
   ]
 }
