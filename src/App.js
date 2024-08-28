@@ -4,13 +4,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-
 import Project from "./pages/Project";
-
-
-
 import Contact from "./pages/Contact";
-
+import Chat from "./components/Chat";
 import WebService from "./sub-pages/services/WebService";
 import MobileService from "./sub-pages/services/MobileService";
 import GraphicService from "./sub-pages/services/GraphicService";
@@ -40,6 +36,10 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
+     
+        {/* Chat button */}
+        { <Chat />}
+     
     </div>
   );
 };

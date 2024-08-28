@@ -47,7 +47,7 @@ const Navbar = () => {
             >
               <Link
                 to={link.path}
-                className="flex flex-row items-center gap-1 hover:bg-blue-400  hover:underline underline-offset-8 px-3 py-2 rounded"
+                className="flex flex-row items-center gap-1   hover:underline underline-offset-8 px-3 py-2 rounded"
               >
                 <span className="tracking-wide font-semibold font-mono uppercase text-md">
                   {link.name}
@@ -67,7 +67,7 @@ const Navbar = () => {
                       <Link
                         key={subIndex}
                         to={subpage.path}
-                        className="block px-4 py-2 hover:bg-blue-400"
+                        className="block px-4 py-2 "
                         onClick={toggleNavbar}
                       >
                         <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono text-md">
@@ -150,7 +150,7 @@ const Navbar = () => {
         </div>
         {LINKS.map((link, index) => (
           <div key={index} className="relative mb-2">
-            <div className="flex flex-row justify-between items-center cursor-pointer px-4 py-2 hover:bg-blue-200">
+            <div className="flex flex-row justify-between items-center cursor-pointer px-4 py-2 ">
               <Link
                 to={link.path}
                 className="block px-4 py-2"
@@ -175,7 +175,7 @@ const Navbar = () => {
                   <Link
                     key={subIndex}
                     to={subpage.path}
-                    className="block px-4 py-2 hover:bg-blue-200"
+                    className="block px-4 py-2 "
                     onClick={toggleNavbar}
                   >
                     <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono text-md">
