@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sparkware/static/css/main.c4627fc0.css",
-    "main.js": "/sparkware/static/js/main.2c74ffcd.js",
+    "main.js": "/sparkware/static/js/main.784fb7b8.js",
     "static/js/453.80d3527b.chunk.js": "/sparkware/static/js/453.80d3527b.chunk.js",
     "static/media/embedded1.png": "/sparkware/static/media/embedded1.840d46e329e21eec1ab9.png",
     "static/media/slide1.jpg": "/sparkware/static/media/slide1.f1e3f6efe618b2df1fca.jpg",
@@ -17,13 +17,11 @@
     "static/media/slide3.jpg": "/sparkware/static/media/slide3.a02c3a8e0f1b8e8d9fa2.jpg",
     "static/media/fa-solid-900.woff2": "/sparkware/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
     "static/media/slide2.jpg": "/sparkware/static/media/slide2.d54b15f01b097bfa154e.jpg",
-    "static/media/main3.jpg": "/sparkware/static/media/main3.360b1eb79d803429dad3.jpg",
     "static/media/web2.jpg": "/sparkware/static/media/web2.1915c0917af872d69203.jpg",
     "static/media/emb1.jpg": "/sparkware/static/media/emb1.d39e49954413586f1c39.jpg",
     "static/media/contact-us.jpg": "/sparkware/static/media/contact-us.7b81e87aedcefe8fa4c8.jpg",
     "static/media/right.jpg": "/sparkware/static/media/right.f362780e6dc75959bef8.jpg",
     "static/media/slide4.jpg": "/sparkware/static/media/slide4.6b91ac1d0f575ff64bcc.jpg",
-    "static/media/mob3.jpg": "/sparkware/static/media/mob3.a4309246c5ce3727ca8e.jpg",
     "static/media/mob.jpg": "/sparkware/static/media/mob.1907a39cfe8ab93a7d95.jpg",
     "static/media/vision-mission.jpg": "/sparkware/static/media/vision-mission.1f9ca1881a4de7dee25d.jpg",
     "static/media/main1.jpg": "/sparkware/static/media/main1.354e74ffa37244136a77.jpg",
@@ -31,18 +29,20 @@
     "static/media/fa-brands-400.woff2": "/sparkware/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
     "static/media/gra1.jpg": "/sparkware/static/media/gra1.9978f78b36448369d850.jpg",
     "static/media/contact-head.jpg": "/sparkware/static/media/contact-head.5ff1a18506e88098cbc3.jpg",
+    "static/media/mob3.jpg": "/sparkware/static/media/mob3.47619b8fb6137060d21d.jpg",
     "static/media/js.png": "/sparkware/static/media/js.649a896f8c09e1c99df5.png",
-    "static/media/web3.jpg": "/sparkware/static/media/web3.84e5b4305c86ae90e1c8.jpg",
+    "static/media/web3.jpg": "/sparkware/static/media/web3.68fccfdad2b119509b64.jpg",
+    "static/media/main3.jpg": "/sparkware/static/media/main3.9c3ba807a4243bb351bc.jpg",
     "static/media/react.png": "/sparkware/static/media/react.14875e789264896826f6.png",
-    "static/media/embb3.jpg": "/sparkware/static/media/embb3.f3c7f3839b91219b99a8.jpg",
     "static/media/python.png": "/sparkware/static/media/python.1149565b3e9e9d2d007a.png",
-    "static/media/graa3.jpg": "/sparkware/static/media/graa3.e3606797317109df6920.jpg",
+    "static/media/embb3.jpg": "/sparkware/static/media/embb3.fc37d91b2eb06a22fdd2.jpg",
     "static/media/fa-regular-400.ttf": "/sparkware/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
     "static/media/mongo.png": "/sparkware/static/media/mongo.a498463b4a0840436178.png",
     "static/media/angular.png": "/sparkware/static/media/angular.8b8a6fb907f45740ab2a.png",
     "static/media/android.png": "/sparkware/static/media/android.7cf2734a3e33780e7a30.png",
     "static/media/logo.png": "/sparkware/static/media/logo.454fba0448ac8b91387d.png",
     "static/media/ps.png": "/sparkware/static/media/ps.05931b35fd0238a48f88.png",
+    "static/media/graa3.jpg": "/sparkware/static/media/graa3.87b1487146597fc5e20d.jpg",
     "static/media/nodejs.png": "/sparkware/static/media/nodejs.2a9a0532c223e092bb70.png",
     "static/media/open.png": "/sparkware/static/media/open.f0b96086d11a1d273a19.png",
     "static/media/fa-regular-400.woff2": "/sparkware/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
@@ -55,11 +55,11 @@
     "static/media/fa-v4compatibility.woff2": "/sparkware/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/sparkware/index.html",
     "main.c4627fc0.css.map": "/sparkware/static/css/main.c4627fc0.css.map",
-    "main.2c74ffcd.js.map": "/sparkware/static/js/main.2c74ffcd.js.map",
+    "main.784fb7b8.js.map": "/sparkware/static/js/main.784fb7b8.js.map",
     "453.80d3527b.chunk.js.map": "/sparkware/static/js/453.80d3527b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4627fc0.css",
-    "static/js/main.2c74ffcd.js"
+    "static/js/main.784fb7b8.js"
   ]
 }
