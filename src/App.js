@@ -39,7 +39,7 @@ const App = () => {
       <div className="flex-grow pt-16">
         <Routes>
           {/* main pages */}
-          <Route ath="sparkware" element={<Home />} />
+          <Route path="sparkware" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="project" element={<Project />} />
           <Route path="contact" element={<Contact />} />
