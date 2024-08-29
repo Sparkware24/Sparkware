@@ -8,6 +8,7 @@ const titles = [
   { title: "Graphic Design" },
   { title: "Software Maintenance and Support" },
   { title: "Embedded System Development" },
+  { title: "Internet of Things" },
 ];
 
 function SlideShow() {

@@ -53,13 +53,13 @@ const ProjectPage = () => {
 
       {/* Boxes Section */}
       <section className="py-12 px-6 bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Box 1 */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
             <img
               src={web1}
               alt="Project 1"
-              className="w-full h-40 object-cover rounded-md mb-4"
+              className="w-full h-auto object-cover rounded-md mb-4"
             />
             <h3 className="text-lg font-semibold mb-2">Portfolio</h3>
             <p className="text-gray-600 mb-4">
@@ -82,7 +82,7 @@ const ProjectPage = () => {
             <img
               src={web2}
               alt="Project 2"
-              className="w-full h-40 object-cover rounded-md mb-4"
+              className="w-full h-auto object-cover rounded-md mb-4"
             />
             <h3 className="text-lg font-semibold mb-2">Travel</h3>
             <p className="text-gray-600 mb-4">
@@ -154,7 +154,7 @@ const ProjectPage = () => {
 
       {/* Boxes Section */}
       <section className="py-12 px-6 bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Box 1 */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
             <img

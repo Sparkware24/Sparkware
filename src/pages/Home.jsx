@@ -141,6 +141,22 @@ function Home() {
               Learn More
             </a>
           </div>
+
+          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-blue-200 hover:border-blue-700 border border-transparent text-center">
+            <img src={icon5} alt="Embedded System Development" className="mx-auto mb-3 w-16" />
+            <h2 className="text-2xl mb-2">Internet of Things</h2>
+            <p className="text-lg">
+              Sparkware specializes in IoT development, crafting custom solutions that enhance
+              your products with cutting-edge technology. Our tailored systems ensure seamless integration and
+              optimal performance across various industries.<br></br>
+              <br></br>
+            </p>
+            <a
+              href="/service/iot" // Replace with the actual URL
+              className="inline-block mt-4 px-6 py-3 text-white bg-blue-950 rounded hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-950 focus:ring-opacity-50">
+              Learn More
+            </a>
+          </div>
         </div>
       </div>
 

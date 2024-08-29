@@ -12,6 +12,7 @@ import MobileService from "./sub-pages/services/MobileService";
 import GraphicService from "./sub-pages/services/GraphicService";
 import SoftwareService from "./sub-pages/services/SoftwareService";
 import EmbeddedService from "./sub-pages/services/EmbeddedService";
+import IotService from "./sub-pages/services/IotService";
 import Preloader from "./components/Preloader";
 
 const App = () => {
@@ -67,6 +68,7 @@ const App = () => {
           <Route path="service/graphic" element={<GraphicService />} />
           <Route path="service/software" element={<SoftwareService />} />
           <Route path="service/embedded" element={<EmbeddedService />} />
+          <Route path="service/iot" element={<IotService />} />
         </Routes>
       </div>
       <Footer />
