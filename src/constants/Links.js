@@ -1,24 +1,24 @@
 export const LINKS = [
-  { name: "Home", path: "/sparkware/" },
+  { name: "Home", path: "/" },
   {
     name: "About",
-    path: "/sparkware/about",
+    path: "/about",
   },
   {
     name: "Service",
 
     subpages: [
-      { name: "Web Application Development", path: "/sparkware/service/web" },
-      { name: "Mobile App Development", path: "/sparkware/service/mobile" },
-      { name: "Graphic Design", path: "/sparkware/service/graphic" },
-      { name: "Software Maintenance and Support", path: "/sparkware/service/software" },
-      { name: "Embedded System Development", path: "/sparkware/service/embedded" },
+      { name: "Web Application Development", path: "/service/web" },
+      { name: "Mobile App Development", path: "/service/mobile" },
+      { name: "Graphic Design", path: "/service/graphic" },
+      { name: "Software Maintenance and Support", path: "/service/software" },
+      { name: "Embedded System Development", path: "/service/embedded" },
     ],
   },
-  { name: "Project", path: "/sparkware/project" },
+  { name: "Project", path: "/project" },
 
   {
     name: "Contact",
-    path: "/sparkware/contact",
+    path: "/contact",
   },
 ];
