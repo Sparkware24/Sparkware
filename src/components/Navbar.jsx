@@ -26,14 +26,16 @@ const Navbar = () => {
     setMobileDropdownOpen(mobileDropdownOpen === index ? null : index);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <nav className="bg-indigo-950 text-white py-4 px-10 fixed left-0 top-0 right-0 z-[1000]">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <img src={Logo} alt="Company Logo" className="h-8 lg:h-10 mr-4" />
-          <span className="text-xl lg:text-2xl font-bold tracking-widest font-serif">
-            Sparkware
-          </span>
+          <span className="text-xl lg:text-2xl font-bold tracking-widest font-serif">Sparkware</span>
         </div>
 
         {/* Desktop Links */}
@@ -43,15 +45,12 @@ const Navbar = () => {
               key={index}
               className="relative group"
               onMouseEnter={() => toggleDropdown(index)}
-              onMouseLeave={() => toggleDropdown(null)}
-            >
+              onMouseLeave={() => toggleDropdown(null)}>
               <Link
                 to={link.path}
-                className="flex flex-row items-center gap-1 hover:bg-blue-400  hover:underline underline-offset-8 px-3 py-2 rounded"
-              >
-                <span className="tracking-wide font-semibold font-mono uppercase text-md">
-                  {link.name}
-                </span>
+                className="flex flex-row items-center gap-1   hover:underline underline-offset-8 px-3 py-2 rounded"
+                onClick={scrollToTop}>
+                <span className="tracking-wide font-semibold font-mono uppercase text-md">{link.name}</span>
                 {link.subpages && (
                   <div className="flex items-center h-full">
                     <ChevronDownIcon className="w-5 h-5 text-white" />
@@ -59,60 +58,62 @@ const Navbar = () => {
                 )}
               </Link>
 
-              {link.subpages &&
-                link.subpages.length < 6 &&
-                dropdownOpen === index && (
-                  <div className="absolute left-0 z-[999] w-48 bg-blue-950 border border-blue-400 rounded shadow-lg group-hover:block">
-                    {link.subpages.map((subpage, subIndex) => (
+              {link.subpages && link.subpages.length < 6 && dropdownOpen === index && (
+                <div className="absolute left-0 z-[999] w-48 bg-blue-950 border border-blue-400 rounded shadow-lg group-hover:block">
+                  {link.subpages.map((subpage, subIndex) => (
+                    <Link
+                      key={subIndex}
+                      to={subpage.path}
+                      className="block px-4 py-2 "
+                      onClick={() => {
+                        scrollToTop();
+                        toggleNavbar();
+                      }}>
+                      <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono text-md">
+                        {subpage.name}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+
+              {link.subpages && link.subpages.length > 5 && dropdownOpen === index && (
+                <div className="flex flex-row absolute left-0 z-[999] w-96 bg-blue-950 border border-blue-400 rounded shadow-lg">
+                  <div className="w-48 group-hover:block border-r border-blue-400">
+                    {link.subpages.slice(0, 9).map((subpage, subIndex) => (
                       <Link
                         key={subIndex}
                         to={subpage.path}
                         className="block px-4 py-2 hover:bg-blue-400"
-                        onClick={toggleNavbar}
-                      >
-                        <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono text-md">
+                        onClick={() => {
+                          scrollToTop();
+                          toggleNavbar();
+                        }}>
+                        <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono  text-md">
                           {subpage.name}
                         </span>
                       </Link>
                     ))}
                   </div>
-                )}
 
-              {link.subpages &&
-                link.subpages.length > 5 &&
-                dropdownOpen === index && (
-                  <div className="flex flex-row absolute left-0 z-[999] w-96 bg-blue-950 border border-blue-400 rounded shadow-lg">
-                    <div className="w-48 group-hover:block border-r border-blue-400">
-                      {link.subpages.slice(0, 9).map((subpage, subIndex) => (
-                        <Link
-                          key={subIndex}
-                          to={subpage.path}
-                          className="block px-4 py-2 hover:bg-blue-400"
-                          onClick={toggleNavbar}
-                        >
-                          <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono  text-md">
-                            {subpage.name}
-                          </span>
-                        </Link>
-                      ))}
-                    </div>
-
-                    <div className="w-48 group-hover:block">
-                      {link.subpages.slice(9).map((subpage, subIndex) => (
-                        <Link
-                          key={subIndex}
-                          to={subpage.path}
-                          className="block px-4 py-2 hover:bg-blue-400"
-                          onClick={toggleNavbar}
-                        >
-                          <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono  text-md">
-                            {subpage.name}
-                          </span>
-                        </Link>
-                      ))}
-                    </div>
+                  <div className="w-48 group-hover:block">
+                    {link.subpages.slice(9).map((subpage, subIndex) => (
+                      <Link
+                        key={subIndex}
+                        to={subpage.path}
+                        className="block px-4 py-2 hover:bg-blue-400"
+                        onClick={() => {
+                          scrollToTop();
+                          toggleNavbar();
+                        }}>
+                        <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono  text-md">
+                          {subpage.name}
+                        </span>
+                      </Link>
+                    ))}
                   </div>
-                )}
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -121,8 +122,7 @@ const Navbar = () => {
         <Link
           to="#"
           onClick={() => window.open("https://wa.me/94786542882", "_blank")}
-          className="ml-4 hidden xl:block"
-        >
+          className="ml-4 hidden xl:block">
           <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center">
             <PhoneIcon className="w-5 h-5 text-white mr-2" />
             +9478 654 2882
@@ -141,8 +141,7 @@ const Navbar = () => {
       <div
         className={`fixed top-0 right-0 h-full overflow-y-auto bg-white text-blue-950  transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } xl:hidden w-60 sm:w-96 p-4 z-[1000]`}
-      >
+        } xl:hidden w-60 sm:w-96 p-4 z-[1000]`}>
         <div className="flex justify-between items-center mb-4">
           <button onClick={toggleNavbar}>
             <XMarkIcon className="w-6 h-6 text-blue-950 " />
@@ -150,12 +149,14 @@ const Navbar = () => {
         </div>
         {LINKS.map((link, index) => (
           <div key={index} className="relative mb-2">
-            <div className="flex flex-row justify-between items-center cursor-pointer px-4 py-2 hover:bg-blue-200">
+            <div className="flex flex-row justify-between items-center cursor-pointer px-4 py-2 ">
               <Link
                 to={link.path}
                 className="block px-4 py-2"
-                onClick={toggleNavbar}
-              >
+                onClick={() => {
+                  scrollToTop();
+                  toggleNavbar();
+                }}>
                 <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono  text-md">
                   {link.name}
                 </span>
@@ -175,9 +176,11 @@ const Navbar = () => {
                   <Link
                     key={subIndex}
                     to={subpage.path}
-                    className="block px-4 py-2 hover:bg-blue-200"
-                    onClick={toggleNavbar}
-                  >
+                    className="block px-4 py-2 "
+                    onClick={() => {
+                      scrollToTop();
+                      toggleNavbar();
+                    }}>
                     <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono text-md">
                       {subpage.name}
                     </span>
@@ -192,8 +195,7 @@ const Navbar = () => {
         <Link
           to="#"
           onClick={() => window.open("https://wa.me/94786542882", "_blank")}
-          className="block mt-4 "
-        >
+          className="block mt-4 ">
           <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center">
             <PhoneIcon className="w-5 h-5 text-white mr-2" />
             +9478 654 2882

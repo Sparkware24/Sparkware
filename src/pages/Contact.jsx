@@ -4,34 +4,27 @@ import communicateIcon from "../constants/images/contact/communicate.png";
 import openIcon from "../constants/images/contact/open.png";
 import contactUs from "../constants/images/contact/contact-head.jpg";
 import heading from "../constants/images/contact/contact-us.jpg";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
     <div className="min-h-screen relative">
       <header className="relative w-full h-[50vh]">
-        <img
-          src={heading}
-          alt="header"
-          className="object-cover w-full h-full"
-        />
+        <img src={heading} alt="header" className="object-cover w-full h-full" />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
-          <h1 className="text-2xl lg:text-5xl font-serif font-bold tracking-widest">
-            Contact Us
-          </h1>
+          <h1 className="text-2xl lg:text-5xl font-serif font-bold tracking-widest">Contact Us</h1>
         </div>
       </header>
 
       <section id="contact" className="bg-gray-100 py-10 text-center">
-        <h1 className="text-4xl font-serif text-blue-900 mb-12 mt-12 inline-block">
-          GET IN TOUCH WITH US
-        </h1>
+        <h1 className="text-4xl font-serif text-blue-900 mb-12 mt-12 inline-block">GET IN TOUCH WITH US</h1>
         <div className="flex flex-col gap-5 px-2 sm:px-4 lg:px-8">
           {/* Contact Us Description */}
           <div className="text-center mb-8">
             <p className="text-lg">
-              At Sparkware, we’re committed to delivering outstanding support
-              and service.<br></br> Reach out with any questions or needs, and our team
-              will ensure your experience with us is smooth and fulfilling.
+              At Sparkware, we’re committed to delivering outstanding support and service.<br></br> Reach out
+              with any questions or needs, and our team will ensure your experience with us is smooth and
+              fulfilling.
             </p>
           </div>
 
@@ -47,14 +40,8 @@ const Contact = () => {
           {/* Info Boxes */}
           <div className="flex flex-wrap justify-around mt-8 mb-12">
             <div className="flex-1 p-4 bg-white border-4 border-blue-900 rounded-md m-2 max-w-xs text-center">
-              <h2 className="text-blue-900 font-bold text-2xl">
-                Visit Our Place
-              </h2>
-              <img
-                src={buildingIcon}
-                alt="Visit Our Place"
-                className="mx-auto w-24 h-24 mb-4"
-              />
+              <h2 className="text-blue-900 font-bold text-2xl">Visit Our Place</h2>
+              <img src={buildingIcon} alt="Visit Our Place" className="mx-auto w-24 h-24 mb-4" />
               <p>
                 Sparkware, Galle - Udugama Road
                 <br />
@@ -64,11 +51,7 @@ const Contact = () => {
 
             <div className="flex-1 p-4 bg-white border-4 border-blue-900 rounded-md m-2 max-w-xs text-center">
               <h2 className="text-blue-900 font-bold text-2xl">Contact</h2>
-              <img
-                src={communicateIcon}
-                alt="Contact"
-                className="mx-auto w-24 h-24 mb-4"
-              />
+              <img src={communicateIcon} alt="Contact" className="mx-auto w-24 h-24 mb-4" />
               <p className="text-blue-900">
                 sparkware24@gmail.com
                 <br />
@@ -78,11 +61,7 @@ const Contact = () => {
 
             <div className="flex-1 p-4 bg-white border-4 border-blue-900 rounded-md m-2 max-w-xs text-center">
               <h2 className="text-blue-900 font-bold text-2xl">Open Hours</h2>
-              <img
-                src={openIcon}
-                alt="Open"
-                className="mx-auto w-24 h-24 mb-4"
-              />
+              <img src={openIcon} alt="Open" className="mx-auto w-24 h-24 mb-4" />
               <p>
                 Monday - Friday: 9:00 AM - 6:00 PM
                 <br />
@@ -100,92 +79,11 @@ const Contact = () => {
               title="map"
               allowFullScreen
               loading="lazy"
-              className="w-full h-[300px] max-w-[1000px] border-0 mx-auto"
-            ></iframe>
+              className="w-full h-[300px] max-w-[1000px] border-0 mx-auto"></iframe>
           </div>
 
           {/* Contact Form */}
-          <div className="mt-24">
-            <h2 className="text-blue-900 font-bold text-3xl text-center font-sans mt-24">
-              GET IN TOUCH
-            </h2>
-            <p className="text-gray-800 text-center text-lg mt-4">
-              Thank you for reaching out to Sparkware. We are here to assist you
-              with any inquiries or issues you may have.
-              <br />
-              Please fill out the form below, and we will respond to your query
-              via email within 24 hours.
-            </p>
-          </div>
-
-          <div className="text-center mt-5 mb-5">
-            <form
-              id="contact-form"
-              className="max-w-xl mx-auto p-4 bg-white border border-gray-300 rounded-md"
-            >
-              <label
-                htmlFor="name"
-                className="block text-left text-gray-700 mb-1"
-              >
-                Name:
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                className="w-full p-2 mb-4 border border-gray-300 rounded-md"
-              />
-
-              <label
-                htmlFor="email"
-                className="block text-left text-gray-700 mb-1"
-              >
-                Email:
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                className="w-full p-2 mb-4 border border-gray-300 rounded-md"
-              />
-
-              <label
-                htmlFor="subject"
-                className="block text-left text-gray-700 mb-1"
-              >
-                Subject:
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                required
-                className="w-full p-2 mb-4 border border-gray-300 rounded-md"
-              />
-
-              <label
-                htmlFor="message"
-                className="block text-left text-gray-700 mb-1"
-              >
-                Message:
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                required
-                className="w-full p-2 mb-4 border border-gray-300 rounded-md resize-y"
-              ></textarea>
-
-              <input
-                type="submit"
-                value="Submit"
-                className="w-full p-2 text-white bg-blue-950 rounded-md cursor-pointer hover:bg-blue-400"
-              />
-            </form>
-          </div>
+          <ContactForm />
         </div>
       </section>
     </div>
