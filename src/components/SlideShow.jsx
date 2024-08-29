@@ -1,66 +1,65 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Styles.css";
-import slide1 from "../constants/images/slides/slide1.jpg";
-import slide2 from "../constants/images/slides/slide2.jpg";
-import slide3 from "../constants/images/slides/slide3.jpg";
-import slide4 from "../constants/images/slides/slide4.jpg";
+import slideImage from "../constants/images/slides/slide3.jpg";
 
-const images = [
-  {
-    path: slide1,
-    title: "Sparkware",
-    text: "Phoenix Digital, we fuse visionary design with cutting-edge web development. Our expert team crafts immersive, high-performance websites that elevate your brand and captivate audiences. Ignite your digital transformation with us and create something truly legendary!",
-  },
-  {
-    path: slide2,
-    title: "Web Design & Development",
-    
-  },
-  {
-    path: slide3,
-    title: "Mobile App Design & Development",
-   
-  },
-  {
-    path: slide4,
-    title: "Cybersecurity Development Services",
-    
-  },
+const titles = [
+  { title: "Web Design & Development" },
+  { title: "Mobile App Design & Development" },
+  { title: "Graphic Design" },
+  { title: "Software Maintenance and Support" },
+  { title: "Embedded System Development" },
 ];
 
 function SlideShow() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [typedText, setTypedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const typingSpeed = 150; // Speed of typing
+  const deletingSpeed = 75; // Speed of deleting
+  const pauseDuration = 2000; // Pause duration between typing and deleting
+  const currentTitle = titles[currentIndex].title;
+
+  const typeTimeout = useRef(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 3 seconds
-    return () => clearInterval(interval);
-  }, []);
+    // Function to handle typing and deleting effect
+    const handleTyping = () => {
+      if (!isDeleting && typedText.length < currentTitle.length) {
+        setTypedText(currentTitle.substring(0, typedText.length + 1));
+      } else if (isDeleting && typedText.length > 0) {
+        setTypedText(currentTitle.substring(0, typedText.length - 1));
+      } else if (!isDeleting && typedText.length === currentTitle.length) {
+        setIsDeleting(true);
+        typeTimeout.current = setTimeout(handleTyping, pauseDuration);
+        return;
+      } else if (isDeleting && typedText.length === 0) {
+        setIsDeleting(false);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % titles.length);
+      }
+
+      typeTimeout.current = setTimeout(handleTyping, isDeleting ? deletingSpeed : typingSpeed);
+    };
+
+    typeTimeout.current = setTimeout(handleTyping, typingSpeed);
+
+    return () => clearTimeout(typeTimeout.current);
+  }, [typedText, isDeleting, currentTitle]);
 
   return (
     <div className="slide-container">
-      {images.map((image, index) => (
-        <div key={index} className={`slide ${index === currentImageIndex ? "slide-active" : ""}`}>
-          <img
-            src={image.path}
-            alt={`Slide ${index}`}
-            className={`slide-image ${index === currentImageIndex ? "slide-image-active" : ""}`}
-          />
-          <div
-            className={`slide-title font-mono text-2xl sm:text-4xl font-bold top-[20px] sm:top-[60px] md:top-[100px] lg:top-[150px] w-[90%] ${
-              index === currentImageIndex ? "slide-title-active" : ""
-            }`}>
-            {image.title}
-          </div>
-          <div
-            className={`slide-text text-sm sm:text-xl top-[170px] sm:top-[220px] md:top-[250px] lg:top-[300px] w-[90%] lg:w-[60%] ${
-              index === currentImageIndex ? "slide-text-active" : ""
-            }`}>
-            {image.text}
-          </div>
-        </div>
-      ))}
+      {/* Static background image */}
+      <img src={slideImage} alt="slide" className="static-image" />
+
+      {/* Centered Main Title */}
+      <h1 className="main-title font-mono text-3xl lg:text-6xl">Innovating Your IT Solutions</h1>
+
+      {/* Typing Effect Title */}
+      <div className="typing-container font-serif text-xl lg:text-3xl px-2">
+        <span className="typed-title">{typedText}</span>
+        <span className="cursor">|</span>
+      </div>
+
+      <p className="main-text text-lg">SPARKWARE</p>
     </div>
   );
 }
