@@ -38,17 +38,17 @@ const App = () => {
       <Navbar />
       <div className="flex-grow pt-16">
         <Routes>
-            {/* main pages */}
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="project" element={<Project />} />
-            <Route path="contact" element={<Contact />} />
-            {/* service sub pages */}
-            <Route path="service/web" element={<WebService />} />
-            <Route path="service/mobile" element={<MobileService />} />
-            <Route path="service/graphic" element={<GraphicService />} />
-            <Route path="service/software" element={<SoftwareService />} />
-            <Route path="service/embedded" element={<EmbeddedService />} />
+          {/* main pages */}
+          <Route ath="sparkware" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="project" element={<Project />} />
+          <Route path="contact" element={<Contact />} />
+          {/* service sub pages */}
+          <Route path="service/web" element={<WebService />} />
+          <Route path="service/mobile" element={<MobileService />} />
+          <Route path="service/graphic" element={<GraphicService />} />
+          <Route path="service/software" element={<SoftwareService />} />
+          <Route path="service/embedded" element={<EmbeddedService />} />
         </Routes>
       </div>
       <Footer />

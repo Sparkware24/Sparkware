@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/" />
+    <title>Page Not Found</title>
+    <script>
+      // Extract the path from the current URL
+      var pathname = window.location.pathname;
+      // Redirect to index.html, preserving the path in the hash
+      window.location.replace("/#" + pathname);
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+  </body>
+</html>
