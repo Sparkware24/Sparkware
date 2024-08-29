@@ -59,7 +59,7 @@ function SlideShow() {
         <span className="cursor">|</span>
       </div>
 
-      <p className="main-text text-lg">SPARKWARE</p>
+      <p className="main-text text-2xl">SPARKWARE</p>
     </div>
   );
 }

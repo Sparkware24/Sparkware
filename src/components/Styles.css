@@ -63,6 +63,19 @@
   top: 0;
   left: 0;
   z-index: -1; /* Place image behind the text */
+  animation: zoomEffect 10s ease-in-out infinite; /* Add zoom animation */
+}
+
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Adjust the scale value as needed */
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .main-title {
@@ -118,6 +131,7 @@
     opacity: 0;
   }
 }
+
 
 /* ImageCarousel */
 .carousel {
