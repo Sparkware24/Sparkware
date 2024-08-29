@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { LINKS } from "../constants/Links";
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import {
   Bars3Icon,
   ChevronDownIcon,
@@ -13,6 +13,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(null);
+   const location = useLocation();
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -28,6 +29,12 @@ const Navbar = () => {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const getLinkClass = (path) => {
+    return `flex flex-row items-center gap-1 px-3 py-2 rounded ${
+      location.pathname === path ? "underline underline-offset-8" : ""
+    } hover:underline underline-offset-8`;
   };
 
   return (
@@ -48,10 +55,7 @@ const Navbar = () => {
               className="relative group"
               onMouseEnter={() => toggleDropdown(index)}
               onMouseLeave={() => toggleDropdown(null)}>
-              <Link
-                to={link.path}
-                className="flex flex-row items-center gap-1   hover:underline underline-offset-8 px-3 py-2 rounded"
-                onClick={scrollToTop}>
+              <Link to={link.path} className={getLinkClass(link.path)} onClick={scrollToTop}>
                 <span className="tracking-wide font-semibold font-mono uppercase text-md">{link.name}</span>
                 {link.subpages && (
                   <div className="flex items-center h-full">
@@ -66,7 +70,9 @@ const Navbar = () => {
                     <Link
                       key={subIndex}
                       to={subpage.path}
-                      className="block px-4 py-2 "
+                      className={`block px-4 py-2 ${
+                        location.pathname === subpage.path ? "underline underline-offset-8" : ""
+                      } hover:underline underline-offset-8`}
                       onClick={() => {
                         scrollToTop();
                         toggleNavbar();
@@ -86,7 +92,9 @@ const Navbar = () => {
                       <Link
                         key={subIndex}
                         to={subpage.path}
-                        className="block px-4 py-2 hover:bg-blue-400"
+                        className={`block px-4 py-2 hover:bg-blue-400 ${
+                          location.pathname === subpage.path ? "underline underline-offset-8" : ""
+                        }`}
                         onClick={() => {
                           scrollToTop();
                           toggleNavbar();
@@ -103,7 +111,9 @@ const Navbar = () => {
                       <Link
                         key={subIndex}
                         to={subpage.path}
-                        className="block px-4 py-2 hover:bg-blue-400"
+                        className={`block px-4 py-2 hover:bg-blue-400 ${
+                          location.pathname === subpage.path ? "underline underline-offset-8" : ""
+                        }`}
                         onClick={() => {
                           scrollToTop();
                           toggleNavbar();
@@ -154,7 +164,9 @@ const Navbar = () => {
             <div className="flex flex-row justify-between items-center cursor-pointer px-4 py-2 ">
               <Link
                 to={link.path}
-                className="block px-4 py-2"
+                className={`block px-4 py-2 ${
+                  location.pathname === link.path ? "underline underline-offset-8" : ""
+                } hover:underline underline-offset-8`}
                 onClick={() => {
                   scrollToTop();
                   toggleNavbar();
@@ -178,7 +190,9 @@ const Navbar = () => {
                   <Link
                     key={subIndex}
                     to={subpage.path}
-                    className="block px-4 py-2 "
+                    className={`block px-4 py-2 ${
+                      location.pathname === subpage.path ? "underline underline-offset-8" : ""
+                    } hover:underline underline-offset-8`}
                     onClick={() => {
                       scrollToTop();
                       toggleNavbar();
