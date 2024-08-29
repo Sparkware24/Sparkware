@@ -33,10 +33,12 @@ const Navbar = () => {
   return (
     <nav className="bg-indigo-950 text-white py-4 px-10 fixed left-0 top-0 right-0 z-[1000]">
       <div className="flex justify-between items-center">
-        <div className="flex items-center">
-          <img src={Logo} alt="Company Logo" className="h-8 lg:h-10 mr-4" />
-          <span className="text-xl lg:text-2xl font-bold tracking-widest font-serif">Sparkware</span>
-        </div>
+        <Link to="/sparkware" onClick={scrollToTop}>
+          <div className="flex items-center">
+            <img src={Logo} alt="Company Logo" className="h-8 lg:h-10 mr-4" />
+            <span className="text-xl lg:text-2xl font-bold tracking-widest font-serif">Sparkware</span>
+          </div>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden xl:flex space-x-1 ml-auto">

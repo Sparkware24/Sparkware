@@ -120,9 +120,6 @@
 
 /* Blinking cursor */
 .cursor {
-  display: inline-block;
-  width: 2px;
-  background-color: white;
   animation: blink 0.7s steps(1) infinite;
 }
 
@@ -131,7 +128,6 @@
     opacity: 0;
   }
 }
-
 
 /* ImageCarousel */
 .carousel {

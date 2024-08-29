@@ -56,7 +56,7 @@ function SlideShow() {
       {/* Typing Effect Title */}
       <div className="typing-container font-serif text-xl lg:text-3xl px-2">
         <span className="typed-title">{typedText}</span>
-        <span className="cursor">|</span>
+        <span className="cursor text-white">|</span>
       </div>
 
       <p className="main-text text-2xl">SPARKWARE</p>
