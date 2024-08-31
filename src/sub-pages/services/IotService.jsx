@@ -1,7 +1,7 @@
 import React from "react";
 import heading from "../../constants/images/services/emb1.jpg";
 import service from "../../constants/images/services/iot.png";
-import service1 from "../../constants/images/services/embb3.jpg";
+import service1 from "../../constants/images/services/iot.jpg";
 import icon1 from "../../constants/images/services/eimg1.png";
 import icon2 from "../../constants/images/services/eimg2.png";
 import icon3 from "../../constants/images/services/eimg3.png";
@@ -114,7 +114,7 @@ const IotService = () => {
       {/* Left Image and Right Content Section */}
       <div className="flex flex-col lg:flex-row justify-center items-center mt-16 px-4 lg:px-20 mb-10">
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-          <img src={service1} alt="Why Choose Us" className="object-cover w-full h-auto" />
+          <img src={service1} alt="Why Choose Us" className="object-cover w-2/3 h-auto mx-auto" />
         </div>
         <div className="w-full lg:w-1/2 lg:pl-8">
           <h1 className="text-2xl lg:text-4xl font-bold mb-4">Why Choose Us for IoT Development?</h1>
