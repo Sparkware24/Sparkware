@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sparkware/static/css/main.47cacb0f.css",
-    "main.js": "/sparkware/static/js/main.38f64793.js",
+    "main.js": "/sparkware/static/js/main.90bf821a.js",
     "static/media/embedded1.png": "/sparkware/static/media/embedded1.840d46e329e21eec1ab9.png",
     "static/media/travel1.png": "/sparkware/static/media/travel1.b844b96cac1f828adc88.png",
     "static/media/web1.png": "/sparkware/static/media/web1.cae5e8f1209b636f4101.png",
     "static/media/snow-agency.png": "/sparkware/static/media/snow-agency.2171b7df4d1f640bc264.png",
     "static/media/fa-solid-900.ttf": "/sparkware/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
-    "static/media/portfolio1.png": "/sparkware/static/media/portfolio1.afbe66f07e1860958d2d.png",
+    "static/media/portfolio1.png": "/sparkware/static/media/portfolio1.1713270753235c11d6a5.png",
     "static/media/emb2.jpg": "/sparkware/static/media/emb2.498f9056660ea21762af.jpg",
     "static/media/gra2.jpg": "/sparkware/static/media/gra2.e2d76aa9fc261d28882b.jpg",
     "static/media/main2.jpg": "/sparkware/static/media/main2.ec00972d9171706a0704.jpg",
@@ -56,10 +56,10 @@
     "static/media/fa-v4compatibility.woff2": "/sparkware/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/sparkware/index.html",
     "main.47cacb0f.css.map": "/sparkware/static/css/main.47cacb0f.css.map",
-    "main.38f64793.js.map": "/sparkware/static/js/main.38f64793.js.map"
+    "main.90bf821a.js.map": "/sparkware/static/js/main.90bf821a.js.map"
   },
   "entrypoints": [
     "static/css/main.47cacb0f.css",
-    "static/js/main.38f64793.js"
+    "static/js/main.90bf821a.js"
   ]
 }
