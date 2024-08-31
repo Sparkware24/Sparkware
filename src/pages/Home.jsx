@@ -11,10 +11,10 @@ import icon2 from "../constants/images/home/mobile.png";
 import icon3 from "../constants/images/home/graphic.png";
 import icon4 from "../constants/images/home/maintain.png";
 import icon5 from "../constants/images/home/embeded.png";
+import icon6 from "../constants/images/home/iot.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 import LeatestProjects from "../components/LeatestProjects";
-import "./Styles.css";
 import ContactForm from "../components/ContactForm";
 
 function Home() {
@@ -32,16 +32,17 @@ function Home() {
           <div className="cursor-defalt">
             <h1 className="mb-4 lg:mb-10 font-bold">
               <span className="text-blue-400 text-2xl lg:text-4xl xl:text-5xl transform transition-transform duration-300 hover:translate-x-2">
-                Innovating Your<br></br>{" "}
+                Innovating Ideas with<br></br>
               </span>
-              <span className="text-blue-950 text-3xl lg:text-5xl xl:text-6xl">IT Solutions </span>
+              <span className="text-blue-950 text-3xl lg:text-5xl xl:text-6xl">Cutting-Edge Technology</span>
               <br />
             </h1>
             <p className="text-black text-lg lg:text-xl">
-              At Sparkware, we provide top-tier IT solutions designed to meet your unique needs with precision
-              and excellence. Our comprehensive range of services, including web development, mobile
-              development, graphic design, software maintenance, and embedded systems, ensures that we offer
-              the most effective and innovative solutions available in the industry.
+              At Sparkware, a dynamic startup company, we provide smart solutions using cutting-edge
+              technologies designed to meet your unique needs with precision and excellence. Our comprehensive
+              range of services, including web development, mobile development, graphic design, software
+              maintenance, embedded systems, and the Internet of Things, ensures that we offer the most
+              effective and innovative solutions available in the industry.
             </p>
             <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row md:gap-x-10 lg:gap-x-0 xl:gap-x-4 mt-5">
               <div className=""></div>
@@ -71,8 +72,8 @@ function Home() {
             <img src={icon1} alt="Web Application Development" className="mx-auto mb-3 w-16" />
             <h2 className="text-2xl mb-2">Web Application Development</h2>
             <p className="text-lg">
-              Sparkware provides cutting-edge technology solutions covering the entire software development
-              lifecycle, ensuring your digital presence is optimized, efficient, and aligned with your goals.
+              Sparkware craft high-performance, secure, and scalable web applications tailored to your
+              business, ensuring a seamless and engaging online experience for your users.
             </p>
             <a
               href="/service/web" // Replace with the actual URL
@@ -85,9 +86,8 @@ function Home() {
             <img src={icon2} alt="Mobile App Development" className="mx-auto mb-3 w-16" />
             <h2 className="text-2xl mb-2">Mobile App Development</h2>
             <p className="text-lg">
-              Sparkware delivers robust software solutions across platforms, focusing on high-performance
-              applications that enhance user engagement and leverage the latest technology for a seamless
-              experience.
+              Sparkware excels in mobile app development, delivering high-performance, robust solutions that
+              enhance user engagement and leverage the latest technology for a seamless experience.
             </p>
             <a
               href="/service/mobile" // Replace with the actual URL
@@ -141,24 +141,24 @@ function Home() {
               Learn More
             </a>
           </div>
+
+          <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-blue-200 hover:border-blue-700 border border-transparent text-center">
+            <img src={icon6} alt="Embedded System Development" className="mx-auto mb-3 w-16" />
+            <h2 className="text-2xl mb-2">Internet of Things</h2>
+            <p className="text-lg">
+              Sparkware specializes in IoT development, designing custom solutions that embed advanced
+              technology into your products. Our innovative systems ensure seamless integration and optimal
+              performance across a wide range of industries.<br></br>
+              <br></br>
+            </p>
+            <a
+              href="/service/iot" // Replace with the actual URL
+              className="inline-block mt-4 px-6 py-3 text-white bg-blue-950 rounded hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-950 focus:ring-opacity-50">
+              Learn More
+            </a>
+          </div>
         </div>
       </div>
-
-      {/* <div className="flex flex-col py-5">
-        <div className="text-center py-6">
-          <h1 className="header-underline-animation font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif">
-            OUR VALUES
-          </h1>
-          <p className="text-lg pt-4 px-4 sm:px-20 lg:px-40 xl:px-60">
-            Their commitment to customer satisfaction is evident in every
-            interaction. They listen to our needs, respond promptly, and go
-            above and beyond to ensure we're completely satisfied.
-          </p>
-        </div>
-        <div className="p-4 sm:px-10 lg:px-20 xl:Px-32">
-          <CustomerReviews />
-        </div>
-      </div>{" "}*/}
 
       <div className="flex flex-col py-5">
         <div className="text-center py-4">
@@ -166,9 +166,9 @@ function Home() {
             OUR PROJECTS
           </h1>
           <p className="text-lg pt-4 px-4 sm:px-20 lg:px-40 xl:px-60">
-            We create bespoke web solutions that cater to unique business needs and objectives. From highly
-            interactive websites to complex web applications, our projects are designed to deliver exceptional
-            user experiences and functionality.
+            We deliver bespoke solutions tailored to your business needs. Our expertise includes web
+            development, mobile app development, graphic design, embedded systems, and IoT ensuring innovative
+            and effective results.
           </p>
         </div>
 
@@ -191,34 +191,34 @@ function Home() {
         {/* Left Column with Title, Text, and Bullet Points */}
         <div className="w-full lg:w-1/2 p-4 lg:pl-10">
           <h2 className="text-3xl font-bold mb-4 text-blue-950">Why Choose Sparkware?</h2>
-          <h3 className="text-xl font-bold mb-2 text-blue-400">Your Trusted IT Solution Partner</h3>
+          <h3 className="text-xl font-bold mb-2 text-blue-400">Your Trusted Smart Solution Partner</h3>
           <p className="text-md mb-8">
-            We offer unparalleled IT solutions tailored to your needs. Our expert team delivers innovative and
-            high-quality services across web development, mobile apps, graphic design, and more. With a
-            commitment to excellence, customer satisfaction, and ongoing support, we ensure that your
-            technology investments drive real results and support your business growth.
+            We offer unparalleled smart technology solutions tailored to your needs. Our expert team delivers
+            innovative and high-quality services across web development, mobile apps, graphic design, and
+            more. With a commitment to excellence, customer satisfaction, and ongoing support, we ensure that
+            your technology investments drive real results and support your business growth.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <ul className="list-none space-y-2">
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   Exceptional IT Solutions
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Understand Your Challenges
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Deliver Top-Quality Services
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Provide Ongoing Support
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   Collaborative Partnership
                 </li>
               </ul>
@@ -226,23 +226,23 @@ function Home() {
             <div>
               <ul className="list-none space-y-2">
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Gather Your Requirements
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Create Tailored Solutions
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Ensure Your Satisfaction
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   Timely Delivery
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   Commitment to Success
                 </li>
               </ul>
