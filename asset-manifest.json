@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/sparkware/static/css/main.e4680946.css",
-    "main.js": "/sparkware/static/js/main.915127d1.js",
-    "static/js/453.80d3527b.chunk.js": "/sparkware/static/js/453.80d3527b.chunk.js",
+    "main.css": "/sparkware/static/css/main.7364539c.css",
+    "main.js": "/sparkware/static/js/main.ae035d65.js",
     "static/media/embedded1.png": "/sparkware/static/media/embedded1.840d46e329e21eec1ab9.png",
     "static/media/travel1.png": "/sparkware/static/media/travel1.b844b96cac1f828adc88.png",
     "static/media/web1.png": "/sparkware/static/media/web1.cae5e8f1209b636f4101.png",
+    "static/media/snow-agency.png": "/sparkware/static/media/snow-agency.2171b7df4d1f640bc264.png",
     "static/media/fa-solid-900.ttf": "/sparkware/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/portfolio1.png": "/sparkware/static/media/portfolio1.afbe66f07e1860958d2d.png",
     "static/media/emb2.jpg": "/sparkware/static/media/emb2.498f9056660ea21762af.jpg",
@@ -26,6 +26,7 @@
     "static/media/main1.jpg": "/sparkware/static/media/main1.354e74ffa37244136a77.jpg",
     "static/media/mob2.jpg": "/sparkware/static/media/mob2.29a26673dc51d8092676.jpg",
     "static/media/fa-brands-400.woff2": "/sparkware/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/iot.png": "/sparkware/static/media/iot.499d75cb2164c683d1cc.png",
     "static/media/gra1.jpg": "/sparkware/static/media/gra1.9978f78b36448369d850.jpg",
     "static/media/contact-head.jpg": "/sparkware/static/media/contact-head.5ff1a18506e88098cbc3.jpg",
     "static/media/mob3.jpg": "/sparkware/static/media/mob3.47619b8fb6137060d21d.jpg",
@@ -53,12 +54,11 @@
     "static/media/eimg6.png": "/sparkware/static/media/eimg6.a849943348cb1641c8f0.png",
     "static/media/fa-v4compatibility.woff2": "/sparkware/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/sparkware/index.html",
-    "main.e4680946.css.map": "/sparkware/static/css/main.e4680946.css.map",
-    "main.915127d1.js.map": "/sparkware/static/js/main.915127d1.js.map",
-    "453.80d3527b.chunk.js.map": "/sparkware/static/js/453.80d3527b.chunk.js.map"
+    "main.7364539c.css.map": "/sparkware/static/css/main.7364539c.css.map",
+    "main.ae035d65.js.map": "/sparkware/static/js/main.ae035d65.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4680946.css",
-    "static/js/main.915127d1.js"
+    "static/css/main.7364539c.css",
+    "static/js/main.ae035d65.js"
   ]
 }
