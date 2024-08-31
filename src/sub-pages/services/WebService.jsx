@@ -94,30 +94,6 @@ const Web = () => {
           </p>
         </div>
 
-        {/* <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
-          <img src={icon8} alt="Service 5 Icon" className="w-16 h-16 mb-4" />
-          <h2 className="text-lg font-bold text-center">
-            E-commerce Solutions
-          </h2>
-          <p className="text-md text-center">
-            Our e-commerce web applications are built to drive sales and enhance
-            customer engagement, with features such as shopping carts, payment
-            gateways, and inventory management.
-          </p>
-        </div> */}
-
-        {/* <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
-          <img src={icon3} alt="Service 6 Icon" className="w-16 h-16 mb-4" />
-          <h2 className="text-lg font-bold text-center">
-            Content Management Systems (CMS)
-          </h2>
-          <p className="text-md text-center">
-            We develop user-friendly CMS platforms that allow you to easily
-            manage and update your website’s content without needing technical
-            expertise.
-          </p>
-        </div> */}
-
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4">
           <img src={icon5} alt="Service 7 Icon" className="w-16 h-16 mb-4" />
           <h2 className="text-lg font-bold text-center"> Performance Optimization</h2>

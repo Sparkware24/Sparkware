@@ -1,9 +1,8 @@
 import React from "react";
-
 import header from "../../constants/images/services/mob.jpg";
 import service from "../../constants/images/services/mob2.jpg";
 import service1 from "../../constants/images/services/mob3.jpg";
-import icon1 from "../../constants/images/services/mimg1.png"; // Replace with actual paths
+import icon1 from "../../constants/images/services/mimg1.png";
 import icon2 from "../../constants/images/services/mimg2.png";
 import icon3 from "../../constants/images/services/mimg3.png";
 import icon4 from "../../constants/images/services/mimg4.png";
@@ -23,7 +22,7 @@ const Mobile = () => {
           </h1>
         </div>
       </div>
-      {/* Centered H1 Header */}
+
       <div className="flex justify-center mt-8">
         <h1 className="text-2xl lg:text-4xl font-bold text-center">
           Transform Your Business with Innovative Mobile Development

@@ -10,30 +10,14 @@ import image7 from "../constants/images/tech/ios.png";
 import image8 from "../constants/images/tech/nodejs.png";
 import image9 from "../constants/images/tech/python.png";
 import image10 from "../constants/images/tech/mongo.png";
-const images = [
-  image1,
-  image2,
- image3,
-  image4,
-  image5,
-  image6,
-image7,
-image8,
-  image9,
-  image10,
-];
+const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
 
 const ImageCarousel = () => {
   return (
     <div className="carousel">
       <div className="carousel-track">
         {[...images, ...images].map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`Slide ${index}`}
-            className="carousel-image"
-          />
+          <img key={index} src={src} alt={`Slide ${index}`} className="carousel-image" />
         ))}
       </div>
     </div>

@@ -11,10 +11,10 @@ import icon2 from "../constants/images/home/mobile.png";
 import icon3 from "../constants/images/home/graphic.png";
 import icon4 from "../constants/images/home/maintain.png";
 import icon5 from "../constants/images/home/embeded.png";
+import icon6 from "../constants/images/home/iot.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 import LeatestProjects from "../components/LeatestProjects";
-import "./Styles.css";
 import ContactForm from "../components/ContactForm";
 
 function Home() {
@@ -143,7 +143,7 @@ function Home() {
           </div>
 
           <div className="bg-white p-4 m-2 rounded shadow-lg max-w-[400px] transform transition-colors duration-300 hover:bg-blue-200 hover:border-blue-700 border border-transparent text-center">
-            <img src={icon5} alt="Embedded System Development" className="mx-auto mb-3 w-16" />
+            <img src={icon6} alt="Embedded System Development" className="mx-auto mb-3 w-16" />
             <h2 className="text-2xl mb-2">Internet of Things</h2>
             <p className="text-lg">
               Sparkware specializes in IoT development, designing custom solutions that embed advanced

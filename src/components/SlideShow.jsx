@@ -48,15 +48,12 @@ function SlideShow() {
 
   return (
     <div className="slide-container">
-      {/* Static background image */}
       <img src={slideImage} alt="slide" className="static-image" />
 
-      {/* Centered Main Title */}
       <h1 className="main-title font-mono text-3xl lg:text-6xl">
         Innovating Ideas with Cutting-Edge Technology
       </h1>
 
-      {/* Typing Effect Title */}
       <div className="typing-container font-serif text-xl lg:text-3xl px-2">
         <span className="typed-title">{typedText}</span>
         <span className="cursor text-white">|</span>

@@ -2,7 +2,7 @@ import React from "react";
 import heading from "../../constants/images/services/emb1.jpg";
 import service from "../../constants/images/services/iot.png";
 import service1 from "../../constants/images/services/embb3.jpg";
-import icon1 from "../../constants/images/services/eimg1.png"; 
+import icon1 from "../../constants/images/services/eimg1.png";
 import icon2 from "../../constants/images/services/eimg2.png";
 import icon3 from "../../constants/images/services/eimg3.png";
 import icon4 from "../../constants/images/services/eimg4.png";
@@ -23,7 +23,6 @@ const IotService = () => {
         </div>
       </div>
 
-      {/* Centered H1 Header */}
       <div className="flex justify-center mt-8">
         <h1 className="text-2xl lg:text-4xl font-bold text-center">Smart Connectivity for a Smarter World</h1>
       </div>
@@ -118,9 +117,7 @@ const IotService = () => {
           <img src={service1} alt="Why Choose Us" className="object-cover w-full h-auto" />
         </div>
         <div className="w-full lg:w-1/2 lg:pl-8">
-          <h1 className="text-2xl lg:text-4xl font-bold mb-4">
-            Why Choose Us for IoT Development?
-          </h1>
+          <h1 className="text-2xl lg:text-4xl font-bold mb-4">Why Choose Us for IoT Development?</h1>
           <ul className="list-disc pl-5 space-y-2">
             <li className="text-lg text-gray-700">
               <strong>Expertise in Diverse Industries:</strong> We have experience developing embedded systems
@@ -128,7 +125,7 @@ const IotService = () => {
               automation.
             </li>
             <li className="text-lg text-gray-700">
-              <strong>Cutting-Edge Technology:</strong>
+              <strong>Cutting-Edge Technology: </strong>
               We utilize the latest tools and technologies to create innovative embedded solutions that keep
               you ahead of the competition.
             </li>

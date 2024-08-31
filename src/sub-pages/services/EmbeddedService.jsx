@@ -2,7 +2,7 @@ import React from "react";
 import heading from "../../constants/images/services/emb1.jpg";
 import service from "../../constants/images/services/emb2.jpg";
 import service1 from "../../constants/images/services/embb3.jpg";
-import icon1 from "../../constants/images/services/eimg1.png"; 
+import icon1 from "../../constants/images/services/eimg1.png";
 import icon2 from "../../constants/images/services/eimg2.png";
 import icon3 from "../../constants/images/services/eimg3.png";
 import icon5 from "../../constants/images/services/eimg5.png";
@@ -22,7 +22,6 @@ const Embedded = () => {
         </div>
       </div>
 
-      {/* Centered H1 Header */}
       <div className="flex justify-center mt-8">
         <h1 className="text-2xl lg:text-4xl font-bold text-center">
           Innovative Solutions for Complex Challenges
@@ -122,7 +121,7 @@ const Embedded = () => {
               automation.
             </li>
             <li className="text-lg text-gray-700">
-              <strong>Cutting-Edge Technology:</strong>
+              <strong>Cutting-Edge Technology: </strong>
               We utilize the latest tools and technologies to create innovative embedded solutions that keep
               you ahead of the competition.
             </li>

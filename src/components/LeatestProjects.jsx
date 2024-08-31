@@ -47,8 +47,7 @@ function LeatestProject() {
         }}
         pagination={{ clickable: true }}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
+        className="mySwiper">
         {projects.map((project, index) => (
           <SwiperSlide
             key={index}
@@ -57,8 +56,7 @@ function LeatestProject() {
               maxWidth: "600px",
               height: "100%",
               margin: "20px",
-            }}
-          >
+            }}>
             <div className="flex justify-center items-center w-full h-full mb-10">
               <div className="bg-white rounded-lg shadow-lg w-full h-full border border-gray-200 flex flex-col items-center">
                 <img

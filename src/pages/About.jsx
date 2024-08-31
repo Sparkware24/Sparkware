@@ -2,7 +2,7 @@ import React from "react";
 import CounterExp from "../components/CounterExp";
 import heading from "../constants/images/about/slide2.jpg";
 import left from "../constants/images/home/left.jpg";
-import cardImage from "../constants/images/about/vision-mission.jpg"; // Replace with your actual image path
+import cardImage from "../constants/images/about/vision-mission.jpg";
 
 const CompanyPage = () => {
   return (
@@ -46,7 +46,7 @@ const CompanyPage = () => {
             <img
               src={cardImage}
               alt="Card"
-              className="h-64 object-contain" // Increased the height from h-48 to h-64
+              className="h-64 object-contain" 
             />
           </div>
           <div className="p-8 lg:flex lg:space-x-8 bg-gray-100">
