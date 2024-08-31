@@ -8,6 +8,7 @@ import "./Styles.css";
 import projectw1 from "../constants/images/projects/portfolio1.png";
 import projecte1 from "../constants/images/projects/embedded1.png";
 import projectw2 from "../constants/images/projects/travel1.png";
+import snow_web from "../constants/images/projects/snow-agency.png";
 
 const projects = [
   {
@@ -21,6 +22,12 @@ const projects = [
     name: "Temperature & Humidity Controller Unit",
     description:
       "This unit is designed to maintain temperature and humidity at the desired level by automatically turning on and off the water motor. It is specifically designed for mushroom huts.",
+  },
+  {
+    imageUrl: snow_web,
+    name: "Agency Website",
+    description:
+      "Explore portfolio showcasing a range of expertly designed projects, learn more about agency, and connect through the contact form. Explore customer reviews to see how they are made an impact.",
   },
   {
     imageUrl: projectw2,

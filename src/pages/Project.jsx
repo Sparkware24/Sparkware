@@ -2,6 +2,7 @@ import React from "react";
 import heading from "../constants/images/projects/slide4.jpg";
 import web1 from "../constants/images/projects/portfolio1.png";
 import web2 from "../constants/images/projects/travel1.png";
+import snow_web from "../constants/images/projects/snow-agency.png";
 import embedded1 from "../constants/images/projects/embedded1.png";
 
 const ProjectPage = () => {
@@ -42,7 +43,6 @@ const ProjectPage = () => {
       {/* Boxes Section */}
       <section className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Box 1 */}
           <div className="bg-gray-100 p-4 rounded-lg shadow-md">
             <img src={web1} alt="Project 1" className="w-full h-auto object-cover rounded-md mb-4" />
             <h3 className="text-lg font-semibold mb-2">Portfolio Website</h3>
@@ -55,7 +55,21 @@ const ProjectPage = () => {
             </a>
           </div>
 
-          {/* Box 2 */}
+          <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+            <img src={snow_web} alt="Project 1" className="w-full h-auto object-cover rounded-md mb-4" />
+            <h3 className="text-lg font-semibold mb-2">Snow Agency Website</h3>
+            <p className="text-gray-600 mb-4">
+              Explore portfolio showcasing a range of expertly designed projects, learn more about agency, and
+              connect through the contact form. Explore customer reviews to see how they are made an impact.
+            </p>
+            <a
+              href="https://sparkware24.github.io/snow-agency-website/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">Read More</button>
+            </a>
+          </div>
+
           <div className="bg-gray-100 p-4 rounded-lg shadow-md">
             <img src={web2} alt="Project 2" className="w-full h-auto object-cover rounded-md mb-4" />
             <h3 className="text-lg font-semibold mb-2">Travel</h3>

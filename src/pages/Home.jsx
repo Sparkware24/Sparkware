@@ -160,22 +160,6 @@ function Home() {
         </div>
       </div>
 
-      {/* <div className="flex flex-col py-5">
-        <div className="text-center py-6">
-          <h1 className="header-underline-animation font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif">
-            OUR VALUES
-          </h1>
-          <p className="text-lg pt-4 px-4 sm:px-20 lg:px-40 xl:px-60">
-            Their commitment to customer satisfaction is evident in every
-            interaction. They listen to our needs, respond promptly, and go
-            above and beyond to ensure we're completely satisfied.
-          </p>
-        </div>
-        <div className="p-4 sm:px-10 lg:px-20 xl:Px-32">
-          <CustomerReviews />
-        </div>
-      </div>{" "}*/}
-
       <div className="flex flex-col py-5">
         <div className="text-center py-4">
           <h1 className="font-bold text-2xl lg:text-3xl pb-1 sm:pb-2 lg:pb-3 font-serif text-blue-950 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-blue-500 after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2">
