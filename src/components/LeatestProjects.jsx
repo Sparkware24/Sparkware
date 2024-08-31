@@ -12,7 +12,7 @@ import projectw2 from "../constants/images/projects/travel1.png";
 const projects = [
   {
     imageUrl: projectw1,
-    name: "Portfolio",
+    name: "Portfolio Website",
     description:
       "Explore a comprehensive showcase of an IT journey, highlighting a blend of formal education, technical skills, and hands-on projects.",
   },
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     imageUrl: projectw2,
-    name: "Travel Lanka",
+    name: "Travel Website",
     description:
       "A responsive travel website offering holiday packages and tours, where customers can explore options and make online reservations seamlessly.",
   },

@@ -183,8 +183,8 @@ function Home() {
           </h1>
           <p className="text-lg pt-4 px-4 sm:px-20 lg:px-40 xl:px-60">
             We deliver bespoke solutions tailored to your business needs. Our expertise includes web
-            development, mobile app development, embedded systems, IoT, and graphic design, ensuring
-            innovative and effective results.
+            development, mobile app development, graphic design, embedded systems, and IoT ensuring innovative
+            and effective results.
           </p>
         </div>
 
@@ -207,7 +207,7 @@ function Home() {
         {/* Left Column with Title, Text, and Bullet Points */}
         <div className="w-full lg:w-1/2 p-4 lg:pl-10">
           <h2 className="text-3xl font-bold mb-4 text-blue-950">Why Choose Sparkware?</h2>
-          <h3 className="text-xl font-bold mb-2 text-blue-400">Your Trusted IT Solution Partner</h3>
+          <h3 className="text-xl font-bold mb-2 text-blue-400">Your Trusted Smart Solution Partner</h3>
           <p className="text-md mb-8">
             We offer unparalleled smart technology solutions tailored to your needs. Our expert team delivers
             innovative and high-quality services across web development, mobile apps, graphic design, and
@@ -218,23 +218,23 @@ function Home() {
             <div>
               <ul className="list-none space-y-2">
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   Exceptional IT Solutions
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Understand Your Challenges
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Deliver Top-Quality Services
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Provide Ongoing Support
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   Collaborative Partnership
                 </li>
               </ul>
@@ -242,23 +242,23 @@ function Home() {
             <div>
               <ul className="list-none space-y-2">
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Gather Your Requirements
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Create Tailored Solutions
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   We Ensure Your Satisfaction
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   Timely Delivery
                 </li>
                 <li className="flex items-start">
-                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2" />
+                  <FontAwesomeIcon icon={faCheckSquare} className="text-blue-500 mr-2 mt-1" />
                   Commitment to Success
                 </li>
               </ul>

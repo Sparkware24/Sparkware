@@ -1,6 +1,6 @@
 import React from "react";
 import heading from "../../constants/images/services/emb1.jpg";
-import service from "../../constants/images/services/emb2.jpg";
+import service from "../../constants/images/services/iot.png";
 import service1 from "../../constants/images/services/embb3.jpg";
 import icon1 from "../../constants/images/services/eimg1.png"; 
 import icon2 from "../../constants/images/services/eimg2.png";
