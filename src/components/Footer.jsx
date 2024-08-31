@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook,  faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Styles.css";
 import { Link } from "react-router-dom";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
@@ -19,7 +19,7 @@ function Footer() {
           <h1 className="text-xl font-bold tracking-wider font-mono underline-animation">ABOUT US</h1>
           <div className="flex flex-row mt-2">
             <p className="text-md pr-8 lg:text-justify">
-              Sparkware is one of the leading IT companies in Sri Lanka. We specialize in delivering
+              Sparkware is one of the startup IT companies in Sri Lanka. We specialize in delivering
               next-generation digital services that are both visually appealing and user-friendly, helping our
               clients achieve successful business growth.
             </p>

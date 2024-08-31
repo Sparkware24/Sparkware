@@ -24,7 +24,7 @@ function CounterExp() {
         </div>
         <div className="flex flex-col justify-center h-full">
           <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-            <Counter threshold={5} increment={1} />
+            <Counter threshold={1} increment={1} />
           </h1>
           <h2 className="text-xl bg-clip-text text-transparent bg-black">
             Years Of Experience
@@ -46,7 +46,7 @@ function CounterExp() {
         </div>
         <div className="flex flex-col justify-center h-full">
           <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
-            <Counter threshold={20} increment={1} />
+            <Counter threshold={5} increment={1} />
           </h1>
           <h2 className="text-xl bg-clip-text text-transparent bg-black">
             Project Completed
@@ -90,7 +90,7 @@ function CounterExp() {
         </div>
         <div className="flex flex-col justify-center h-full">
           <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-500">
-            <Counter threshold={30} increment={1} />
+            <Counter threshold={20} increment={1} />
           </h1>
           <h2 className="text-xl bg-clip-text text-transparent bg-black">
             Satisfied Clients

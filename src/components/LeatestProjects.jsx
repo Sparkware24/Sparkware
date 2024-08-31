@@ -14,13 +14,13 @@ const projects = [
     imageUrl: projectw1,
     name: "Portfolio",
     description:
-      "An innovative showcase of diverse projects, blending creativity and technical expertise to deliver impactful digital solutions.",
+      "Explore a comprehensive showcase of an IT journey, highlighting a blend of formal education, technical skills, and hands-on projects.",
   },
   {
     imageUrl: projecte1,
     name: "Temperature & Humidity Controller Unit",
     description:
-      "This unit is designed to maintain temperature and humidity at the desired level by automatically turning on and off. It is specifically designed for mushroom huts.",
+      "This unit is designed to maintain temperature and humidity at the desired level by automatically turning on and off the water motor. It is specifically designed for mushroom huts.",
   },
   {
     imageUrl: projectw2,
@@ -54,7 +54,7 @@ function LeatestProject() {
             key={index}
             style={{
               width: "auto",
-              maxWidth: "800px",
+              maxWidth: "600px",
               height: "100%",
               margin: "20px",
             }}
@@ -67,7 +67,7 @@ function LeatestProject() {
                   className="w-full h-[300px] object-cover rounded-lg mb-4"
                 />
                 <h2 className="text-xl font-bold mb-2">{project.name}</h2>
-                <p className="text-base text-gray-700 text-center px-2 lg:px-10">
+                <p className="text-base text-gray-700 text-center px-2 lg:px-10 mb-5">
                   {project.description}
                 </p>
               </div>
