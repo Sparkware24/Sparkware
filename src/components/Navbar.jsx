@@ -43,7 +43,9 @@ const Navbar = () => {
         <Link to="/sparkware" onClick={scrollToTop}>
           <div className="flex items-center">
             <img src={Logo} alt="Company Logo" className="h-8 lg:h-10 mr-4" />
-            <span className="text-xl lg:text-2xl font-bold tracking-widest font-serif">Sparkware</span>
+            <span className="text-xl lg:text-2xl font-bold tracking-widest font-serif">
+              Sparkware
+            </span>
           </div>
         </Link>
 
@@ -54,9 +56,16 @@ const Navbar = () => {
               key={index}
               className="relative group"
               onMouseEnter={() => toggleDropdown(index)}
-              onMouseLeave={() => toggleDropdown(null)}>
-              <Link to={link.path} className={getLinkClass(link.path)} onClick={scrollToTop}>
-                <span className="tracking-wide font-semibold font-mono uppercase text-md">{link.name}</span>
+              onMouseLeave={() => toggleDropdown(null)}
+            >
+              <Link
+                to={link.path}
+                className={getLinkClass(link.path)}
+                onClick={scrollToTop}
+              >
+                <span className="tracking-wide font-semibold font-mono uppercase text-md">
+                  {link.name}
+                </span>
                 {link.subpages && (
                   <div className="flex items-center h-full">
                     <ChevronDownIcon className="w-5 h-5 text-white" />
@@ -64,68 +73,81 @@ const Navbar = () => {
                 )}
               </Link>
 
-              {link.subpages && link.subpages.length < 7 && dropdownOpen === index && (
-                <div className="absolute left-0 z-[999] w-48 bg-blue-950 border border-blue-400 rounded shadow-lg group-hover:block">
-                  {link.subpages.map((subpage, subIndex) => (
-                    <Link
-                      key={subIndex}
-                      to={subpage.path}
-                      className={`block px-4 py-2 ${
-                        location.pathname === subpage.path ? "underline underline-offset-8" : ""
-                      } hover:underline underline-offset-8`}
-                      onClick={() => {
-                        scrollToTop();
-                        toggleNavbar();
-                      }}>
-                      <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono text-md">
-                        {subpage.name}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              )}
-
-              {link.subpages && link.subpages.length > 7 && dropdownOpen === index && (
-                <div className="flex flex-row absolute left-0 z-[999] w-96 bg-blue-950 border border-blue-400 rounded shadow-lg">
-                  <div className="w-48 group-hover:block border-r border-blue-400">
-                    {link.subpages.slice(0, 9).map((subpage, subIndex) => (
+              {link.subpages &&
+                link.subpages.length < 7 &&
+                dropdownOpen === index && (
+                  <div className="absolute left-0 z-[999] w-48 bg-blue-950 border border-blue-400 rounded shadow-lg group-hover:block">
+                    {link.subpages.map((subpage, subIndex) => (
                       <Link
                         key={subIndex}
                         to={subpage.path}
-                        className={`block px-4 py-2 hover:bg-blue-400 ${
-                          location.pathname === subpage.path ? "underline underline-offset-8" : ""
-                        }`}
+                        className={`block px-4 py-2 ${
+                          location.pathname === subpage.path
+                            ? "underline underline-offset-8"
+                            : ""
+                        } hover:underline underline-offset-8`}
                         onClick={() => {
                           scrollToTop();
                           toggleNavbar();
-                        }}>
-                        <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono  text-md">
+                        }}
+                      >
+                        <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono text-md">
                           {subpage.name}
                         </span>
                       </Link>
                     ))}
                   </div>
+                )}
 
-                  <div className="w-48 group-hover:block">
-                    {link.subpages.slice(9).map((subpage, subIndex) => (
-                      <Link
-                        key={subIndex}
-                        to={subpage.path}
-                        className={`block px-4 py-2 hover:bg-blue-400 ${
-                          location.pathname === subpage.path ? "underline underline-offset-8" : ""
-                        }`}
-                        onClick={() => {
-                          scrollToTop();
-                          toggleNavbar();
-                        }}>
-                        <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono  text-md">
-                          {subpage.name}
-                        </span>
-                      </Link>
-                    ))}
+              {link.subpages &&
+                link.subpages.length > 7 &&
+                dropdownOpen === index && (
+                  <div className="flex flex-row absolute left-0 z-[999] w-96 bg-blue-950 border border-blue-400 rounded shadow-lg">
+                    <div className="w-48 group-hover:block border-r border-blue-400">
+                      {link.subpages.slice(0, 9).map((subpage, subIndex) => (
+                        <Link
+                          key={subIndex}
+                          to={subpage.path}
+                          className={`block px-4 py-2 hover:bg-blue-400 ${
+                            location.pathname === subpage.path
+                              ? "underline underline-offset-8"
+                              : ""
+                          }`}
+                          onClick={() => {
+                            scrollToTop();
+                            toggleNavbar();
+                          }}
+                        >
+                          <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono  text-md">
+                            {subpage.name}
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+
+                    <div className="w-48 group-hover:block">
+                      {link.subpages.slice(9).map((subpage, subIndex) => (
+                        <Link
+                          key={subIndex}
+                          to={subpage.path}
+                          className={`block px-4 py-2 hover:bg-blue-400 ${
+                            location.pathname === subpage.path
+                              ? "underline underline-offset-8"
+                              : ""
+                          }`}
+                          onClick={() => {
+                            scrollToTop();
+                            toggleNavbar();
+                          }}
+                        >
+                          <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono  text-md">
+                            {subpage.name}
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
             </div>
           ))}
         </div>
@@ -134,8 +156,12 @@ const Navbar = () => {
         <Link
           to="#"
           onClick={() => window.open("https://wa.me/94786542882", "_blank")}
-          className="ml-4 hidden xl:block">
-          <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center">
+          className="ml-4 hidden xl:block"
+        >
+          <button
+            aria-label="Contact us on WhatsApp"
+            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center"
+          >
             <PhoneIcon className="w-5 h-5 text-white mr-2" />
             +9478 654 2882
           </button>
@@ -143,7 +169,7 @@ const Navbar = () => {
 
         {/* Hamburger Icon for Mobile Devices */}
         <div className="xl:hidden">
-          <button onClick={toggleNavbar}>
+          <button aria-label="Toggle navigation menu" onClick={toggleNavbar}>
             <Bars3Icon className="w-6 h-6 text-white" />
           </button>
         </div>
@@ -153,7 +179,8 @@ const Navbar = () => {
       <div
         className={`fixed top-0 right-0 h-full overflow-y-auto bg-white text-blue-950  transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } xl:hidden w-60 sm:w-96 p-4 z-[1000]`}>
+        } xl:hidden w-60 sm:w-96 p-4 z-[1000]`}
+      >
         <div className="flex justify-between items-center mb-4">
           <button onClick={toggleNavbar}>
             <XMarkIcon className="w-6 h-6 text-blue-950 " />
@@ -165,12 +192,15 @@ const Navbar = () => {
               <Link
                 to={link.path}
                 className={`block px-4 py-2 ${
-                  location.pathname === link.path ? "underline underline-offset-8" : ""
+                  location.pathname === link.path
+                    ? "underline underline-offset-8"
+                    : ""
                 } hover:underline underline-offset-8`}
                 onClick={() => {
                   scrollToTop();
                   toggleNavbar();
-                }}>
+                }}
+              >
                 <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono  text-md">
                   {link.name}
                 </span>
@@ -191,12 +221,15 @@ const Navbar = () => {
                     key={subIndex}
                     to={subpage.path}
                     className={`block px-4 py-2 ${
-                      location.pathname === subpage.path ? "underline underline-offset-8" : ""
+                      location.pathname === subpage.path
+                        ? "underline underline-offset-8"
+                        : ""
                     } hover:underline underline-offset-8`}
                     onClick={() => {
                       scrollToTop();
                       toggleNavbar();
-                    }}>
+                    }}
+                  >
                     <span className="tracking-wide font-semibold hover:underline underline-offset-8 font-mono text-md">
                       {subpage.name}
                     </span>
@@ -211,7 +244,8 @@ const Navbar = () => {
         <Link
           to="#"
           onClick={() => window.open("https://wa.me/94786542882", "_blank")}
-          className="block mt-4 ">
+          className="block mt-4 "
+        >
           <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center">
             <PhoneIcon className="w-5 h-5 text-white mr-2" />
             +9478 654 2882
