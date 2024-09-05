@@ -247,8 +247,8 @@ const Navbar = () => {
           className="block mt-4"
         >
           <button
+            aria-label="Contact us on WhatsApp"
             className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center"
-            aria-label="Call +9478 654 2882"
           >
             <PhoneIcon className="w-5 h-5 text-white mr-2" />
             +9478 654 2882
