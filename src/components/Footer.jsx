@@ -106,6 +106,7 @@ function Footer() {
             aria-label="Visit our Facebook page"
           >
             <FontAwesomeIcon icon={faFacebook} className="text-white h-5 w-5" />
+            <span className="sr-only">Visit our Facebook page</span>
           </a>
 
           <a
@@ -115,6 +116,7 @@ function Footer() {
             aria-label="Connect with us on LinkedIn"
           >
             <FontAwesomeIcon icon={faLinkedin} className="text-white h-5 w-5" />
+            <span className="sr-only">Connect with us on LinkedIn</span>
           </a>
         </div>
       </div>
