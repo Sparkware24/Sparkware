@@ -240,7 +240,7 @@ function Home() {
           <h2 className="text-3xl font-bold mb-4 text-blue-950">
             Why Choose Sparkware?
           </h2>
-          <h3 class="text-xl font-bold mb-2 text-blue-400">
+          <h3 class="text-xl font-bold mb-2 text-blue-500">
             Your Trusted Smart Solution Partner
           </h3>
 
