@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sparkware/static/css/main.aeec63d1.css",
+    "main.css": "/sparkware/static/css/main.db01e9fd.css",
     "main.js": "/sparkware/static/js/main.e25b2307.js",
     "static/media/embedded1.png": "/sparkware/static/media/embedded1.840d46e329e21eec1ab9.png",
     "static/media/travel1.png": "/sparkware/static/media/travel1.b844b96cac1f828adc88.png",
@@ -55,11 +55,11 @@
     "static/media/eimg6.png": "/sparkware/static/media/eimg6.a849943348cb1641c8f0.png",
     "static/media/fa-v4compatibility.woff2": "/sparkware/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/sparkware/index.html",
-    "main.aeec63d1.css.map": "/sparkware/static/css/main.aeec63d1.css.map",
+    "main.db01e9fd.css.map": "/sparkware/static/css/main.db01e9fd.css.map",
     "main.e25b2307.js.map": "/sparkware/static/js/main.e25b2307.js.map"
   },
   "entrypoints": [
-    "static/css/main.aeec63d1.css",
+    "static/css/main.db01e9fd.css",
     "static/js/main.e25b2307.js"
   ]
 }
