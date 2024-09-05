@@ -103,6 +103,21 @@ const Navbar = () => {
           ))}
         </div>
 
+        {/* WhatsApp Button for Large Screens Only */}
+        <Link
+          to="#"
+          onClick={() => window.open("https://wa.me/94786542882", "_blank")}
+          className="hidden xl:flex ml-4"
+        >
+          <button
+            aria-label="Contact us on WhatsApp"
+            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center"
+          >
+            <PhoneIcon className="w-5 h-5 text-white mr-2" aria-hidden="true" />
+            +9478 654 2882
+          </button>
+        </Link>
+
         {/* Hamburger Icon for Mobile Devices */}
         <div className="xl:hidden">
           <button aria-label="Toggle navigation menu" onClick={toggleNavbar}>
@@ -183,7 +198,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* WhatsApp Button in Sidebar */}
+        {/* WhatsApp Button in Sidebar for Mobile Devices */}
         <Link
           to="#"
           onClick={() => window.open("https://wa.me/94786542882", "_blank")}
