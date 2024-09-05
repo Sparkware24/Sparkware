@@ -141,10 +141,11 @@
 }
 
 .carousel-image {
-  width: 100px; /* Adjust the width of your images */
-  height: 100px; /* Adjust the height of your images */
-  margin-right: 10px; /* Adjust the spacing between images */
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensures the image fits within the box while maintaining its aspect ratio */
 }
+
 
 @keyframes scroll {
   0% {
