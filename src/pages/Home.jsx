@@ -240,9 +240,10 @@ function Home() {
           <h2 className="text-3xl font-bold mb-4 text-blue-950">
             Why Choose Sparkware?
           </h2>
-          <h3 className="text-xl font-bold mb-2 text-blue-400">
+          <h3 class="text-xl font-bold mb-2 text-blue-400">
             Your Trusted Smart Solution Partner
           </h3>
+
           <p className="text-md mb-8">
             We offer unparalleled smart technology solutions tailored to your
             needs. Our expert team delivers innovative and high-quality services
