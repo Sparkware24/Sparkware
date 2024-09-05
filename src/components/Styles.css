@@ -141,10 +141,11 @@
 }
 
 .carousel-image {
-    width: 100px;
-    height: 100px;
-    object-fit: cover; /* Ensures the image fits within the box while maintaining its aspect ratio */
+    width: 100%; /* Or set a specific width */
+    height: auto; /* Ensures the height scales according to the width */
+    max-width: 577px; /* Optional: Set the maximum width to the natural width */
 }
+
 
 
 @keyframes scroll {
