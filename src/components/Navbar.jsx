@@ -244,9 +244,12 @@ const Navbar = () => {
         <Link
           to="#"
           onClick={() => window.open("https://wa.me/94786542882", "_blank")}
-          className="block mt-4 "
+          className="block mt-4"
         >
-          <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center">
+          <button
+            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center"
+            aria-label="Call +9478 654 2882"
+          >
             <PhoneIcon className="w-5 h-5 text-white mr-2" />
             +9478 654 2882
           </button>
