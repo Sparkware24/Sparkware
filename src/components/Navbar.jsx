@@ -241,19 +241,16 @@ const Navbar = () => {
         ))}
 
         {/* WhatsApp Button in Sidebar for Mobile Devices */}
-        <Link
-          to="#"
-          onClick={() => window.open("https://wa.me/94786542882", "_blank")}
-          className="block mt-4"
+        <a
+          href="https://wa.me/94786542882"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Contact us on WhatsApp"
+          className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center block mt-4"
         >
-          <button
-            aria-label="Contact us on WhatsApp"
-            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center"
-          >
-            <PhoneIcon className="w-5 h-5 text-white mr-2" />
-            +9478 654 2882
-          </button>
-        </Link>
+          <PhoneIcon className="w-5 h-5 text-white mr-2" />
+          +9478 654 2882
+        </a>
       </div>
     </nav>
   );
