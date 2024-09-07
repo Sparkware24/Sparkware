@@ -29,24 +29,6 @@ const App = () => {
     loadData();
   }, []);
 
-  useEffect(() => {
-    const handleScroll = (event) => {
-      event.preventDefault();
-      // Adjust this value to control smoothness and speed
-      window.scrollBy({
-        top: event.deltaY * 3,
-        behavior: "smooth",
-      });
-    };
-
-    window.addEventListener("wheel", handleScroll, { passive: false });
-
-    // Cleanup function to remove the event listener on component unmount
-    return () => {
-      window.removeEventListener("wheel", handleScroll);
-    };
-  }, []);
-
   // Return loader until loading is complete
   if (loading) {
     return <Preloader />;

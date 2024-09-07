@@ -72,12 +72,15 @@ const ProjectPage = () => {
 
           <div className="bg-gray-100 p-4 rounded-lg shadow-md">
             <img src={web2} alt="Project 2" className="w-full h-auto object-cover rounded-md mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Travel</h3>
+            <h3 className="text-lg font-semibold mb-2">Travel Company Website</h3>
             <p className="text-gray-600 mb-4">
               A responsive travel website offering holiday packages and tours, where customers can explore
               options and make online reservations seamlessly.
             </p>
-            <a href="https://shammisk.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://travel-lanka.infinityfreeapp.com/index.php?i=1"
+              target="_blank"
+              rel="noopener noreferrer">
               <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">Read More</button>
             </a>
           </div>
