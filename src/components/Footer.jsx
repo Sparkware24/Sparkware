@@ -13,21 +13,26 @@ function Footer() {
   };
 
   return (
-    <div className=" bg-indigo-950 text-white">
+    <div className="bg-indigo-950 text-white">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 xl:gap-16 xl:justify-items-center py-8 px-4 md:px-10">
-        <div className="">
-          <h1 className="text-xl font-bold tracking-wider font-mono underline-animation">ABOUT US</h1>
+        <div>
+          <h1 className="text-xl font-bold tracking-wider font-mono underline-animation">
+            ABOUT US
+          </h1>
           <div className="flex flex-row mt-2">
             <p className="text-md pr-8 lg:text-justify">
-              Sparkware is one of the startup IT companies in Sri Lanka. We specialize in delivering
-              next-generation digital services that are both visually appealing and user-friendly, helping our
-              clients achieve successful business growth.
+              Sparkware is one of the startup IT companies in Sri Lanka. We
+              specialize in delivering next-generation digital services that are
+              both visually appealing and user-friendly, helping our clients
+              achieve successful business growth.
             </p>
           </div>
         </div>
 
-        <div className="">
-          <h1 className="text-xl font-bold tracking-wider font-mono underline-animation">Contact</h1>
+        <div>
+          <h1 className="text-xl font-bold tracking-wider font-mono underline-animation">
+            Contact
+          </h1>
           <p className="text-md mt-2">
             <span>Sparkware, </span>
             <br />
@@ -41,43 +46,50 @@ function Footer() {
           </p>
         </div>
 
-        <div className="">
-          <h1 className="text-xl font-bold tracking-wider font-mono underline-animation">QUICK LINKS</h1>
+        <div>
+          <h1 className="text-xl font-bold tracking-wider font-mono underline-animation">
+            QUICK LINKS
+          </h1>
           <ul className="list-none mt-2">
             <li className="flex flex-row transform transition-transform duration-300 hover:translate-x-2">
-              <ArrowRightIcon className="text-white h-5 w5 mr-2 font-semibold" />
-              <Link to="/sparkware" onClick={scrollToTop} className="">
+              <ArrowRightIcon className="text-white h-5 w-5 mr-2 font-semibold" />
+              <Link to="/sparkware" onClick={scrollToTop}>
                 Home
               </Link>
             </li>
             <li className="flex flex-row transform transition-transform duration-300 hover:translate-x-2">
-              <ArrowRightIcon className="text-white h-5 w5 mr-2 font-semibold" />
-              <Link to="/about" onClick={scrollToTop} className="">
+              <ArrowRightIcon className="text-white h-5 w-5 mr-2 font-semibold" />
+              <Link to="/about" onClick={scrollToTop}>
                 About
               </Link>
             </li>
             <li className="flex flex-row transform transition-transform duration-300 hover:translate-x-2">
-              <ArrowRightIcon className="text-white h-5 w5 mr-2 font-semibold" />
-              <Link to="/service/web" onClick={scrollToTop} className="">
+              <ArrowRightIcon className="text-white h-5 w-5 mr-2 font-semibold" />
+              <Link to="/service/web" onClick={scrollToTop}>
                 Service
               </Link>
             </li>
             <li className="flex flex-row transform transition-transform duration-300 hover:translate-x-2">
-              <ArrowRightIcon className="text-white h-5 w5 mr-2 font-semibold" />
-              <Link to="/project" onClick={scrollToTop} className="">
+              <ArrowRightIcon className="text-white h-5 w-5 mr-2 font-semibold" />
+              <Link to="/project" onClick={scrollToTop}>
                 Project
               </Link>
             </li>
             <li className="flex flex-row transform transition-transform duration-300 hover:translate-x-2">
-              <ArrowRightIcon className="text-white h-5 w5 mr-2 font-semibold" />
-              <Link to="/contact" onClick={scrollToTop} className="">
+              <ArrowRightIcon className="text-white h-5 w-5 mr-2 font-semibold" />
+              <Link to="/contact" onClick={scrollToTop}>
                 Contact
               </Link>
             </li>
           </ul>
         </div>
+
         <div className="flex flex-col sm:flex-row items-center">
-          <img src={logo} alt="logo" className="w-[250px] h-auto mx-auto sm:mx-0" />
+          <img
+            src={logo}
+            alt="logo"
+            className="w-[250px] h-auto mx-auto sm:mx-0"
+          />
         </div>
       </div>
 
@@ -87,12 +99,24 @@ function Footer() {
         </p>
 
         <div className="flex flex-row justify-start sm:justify-center gap-3 lg:gap-5 mt-2 mb-5">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faFacebook} size="lg" />
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit our Facebook page"
+          >
+            <FontAwesomeIcon icon={faFacebook} className="text-white h-5 w-5" />
+            <span className="sr-only">Visit our Facebook page</span>
           </a>
 
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} size="lg" />
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Connect with us on LinkedIn"
+          >
+            <FontAwesomeIcon icon={faLinkedin} className="text-white h-5 w-5" />
+            <span className="sr-only">Connect with us on LinkedIn</span>
           </a>
         </div>
       </div>

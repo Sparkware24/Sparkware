@@ -128,24 +128,27 @@
 }
 
 /* ImageCarousel */
+/* Styles.css */
 .carousel {
+  width: 100%;
   overflow: hidden;
-  width: 100%; /* Adjust to the desired width */
-  white-space: nowrap;
   position: relative;
 }
 
 .carousel-track {
   display: flex;
   animation: scroll 20s linear infinite;
+  width: calc(200%); /* Double the width to accommodate infinite scrolling */
 }
 
 .carousel-image {
-  width: 100px; /* Adjust the width of your images */
-  height: 100px; /* Adjust the height of your images */
-  margin-right: 10px; /* Adjust the spacing between images */
+  width: 100px; /* Set the desired image size */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 10px;
+  object-fit: contain;
 }
 
+/* Animation for smooth scrolling */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -154,6 +157,7 @@
     transform: translateX(-50%);
   }
 }
+
 
 /* Swiper Slides  */
 .mySwiper .swiper-pagination-bullet {
